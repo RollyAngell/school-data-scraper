@@ -11,7 +11,7 @@ from datetime import datetime
 
 # Configuration
 URL = "https://txschools.gov/?view=schools&lng=en"
-MAX_PAGES = 30  # Change to a number (e.g., 10) to limit pages, or leave as None for all pages.
+MAX_PAGES = 2  # Change to a number (e.g., 10) to limit pages, or leave as None for all pages.
 
 # Logging configuration
 def setup_logging():
@@ -358,10 +358,13 @@ def navigate_to_next_page(driver):
 def get_all_school_links_first(driver):
     """
     Get all school links first and then process them
+    Returns:
+        tuple: (list of links, first page number, last page number)
     """
     logger = logging.getLogger(__name__)
     all_links = []
     page_number = 1
+    last_page = 1  # Track the last page number
     
     try:
         logger.info("🔍 Starting link collection...")
@@ -382,6 +385,7 @@ def get_all_school_links_first(driver):
                 break
                 
             all_links.extend(links)
+            last_page = page_number  # Update last page number
             logger.info(f"✅ Links found on page {page_number}: {len(links)}")
             
             if MAX_PAGES and page_number >= MAX_PAGES:
@@ -398,7 +402,7 @@ def get_all_school_links_first(driver):
         logger.error(f"❌ Error collecting links: {str(e)}")
     
     logger.info(f"📊 Total links collected: {len(all_links)}")
-    return all_links
+    return all_links, 1, last_page  # Return links and page range
 
 def process_school_links(driver, links):
     """
@@ -455,8 +459,8 @@ def scrape_schools():
         driver.get(URL)
         time.sleep(random.uniform(2, 3))
         
-        # Phase 1: Collect all links
-        all_links = get_all_school_links_first(driver)
+        # Phase 1: Collect all links and get page range
+        all_links, first_page, last_page = get_all_school_links_first(driver)
         
         if not all_links:
             logger.error("❌ No links found to process")
@@ -466,10 +470,9 @@ def scrape_schools():
         logger.info("🔄 Starting link processing...")
         all_school_data = process_school_links(driver, all_links)
         
-        # Save final results
+        # Save final results with page range in filename
         if all_school_data:
-            timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-            csv_filename = f"schools_data_{timestamp}.csv"
+            csv_filename = f"schools_data_pages_{first_page}_to_{last_page}.csv"
             save_to_csv(all_school_data, csv_filename)
             logger.info(f"📂 Data saved to {csv_filename}")
             logger.info(f"📊 Total schools processed: {len(all_school_data)}")
