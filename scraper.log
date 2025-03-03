@@ -6818,3 +6818,1265 @@ Stacktrace:
 2025-03-03 09:32:42,115 - INFO - Data saved to: output/schools_data_pages_1_to_2.csv
 2025-03-03 09:32:42,117 - INFO - 📂 Data saved to schools_data_pages_1_to_2.csv
 2025-03-03 09:32:42,117 - INFO - 📊 Total schools processed: 30
+2025-03-03 09:44:22,910 - INFO - 🚀 Starting scraping process...
+2025-03-03 09:44:28,286 - INFO - 🔍 Starting link collection...
+2025-03-03 09:44:33,954 - INFO - 📃 Getting links from page 1
+2025-03-03 09:44:34,079 - INFO - ✅ Links found on page 1: 15
+2025-03-03 09:44:41,898 - INFO - 📃 Getting links from page 2
+2025-03-03 09:44:41,993 - INFO - ✅ Links found on page 2: 15
+2025-03-03 09:44:49,139 - INFO - 📃 Getting links from page 3
+2025-03-03 09:44:49,229 - INFO - ✅ Links found on page 3: 15
+2025-03-03 09:44:49,649 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(54, 'Connection reset by peer')': /session/cdd715580729652c56f7e16809cf4f4f
+2025-03-03 09:44:49,650 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x101c32990>: Failed to establish a new connection: [Errno 61] Connection refused')': /session/cdd715580729652c56f7e16809cf4f4f
+2025-03-03 09:44:49,650 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x101c32490>: Failed to establish a new connection: [Errno 61] Connection refused')': /session/cdd715580729652c56f7e16809cf4f4f
+2025-03-03 09:46:16,429 - INFO - 🚀 Starting scraping process...
+2025-03-03 09:46:22,979 - INFO - 🔍 Starting link collection...
+2025-03-03 09:46:31,912 - INFO - 📃 Getting links from page 1
+2025-03-03 09:46:32,084 - INFO - ✅ Links found on page 1: 15
+2025-03-03 09:46:32,085 - INFO - 🏁 Maximum page limit reached
+2025-03-03 09:46:32,085 - INFO - 📊 Total links collected: 15
+2025-03-03 09:46:32,085 - INFO - 🔄 Starting link processing...
+2025-03-03 09:46:32,085 - INFO - 
+🏫 Processing school 1/15: https://txschools.gov/?view=school&id=108913118&lng=en
+2025-03-03 09:46:35,453 - ERROR - ❌ Error processing school: Message: no such element: Unable to locate element: {"method":"css selector","selector":"button[aria-current='true']"}
+  (Session info: chrome=133.0.6943.142); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+0   chromedriver                        0x0000000100ff82d4 cxxbridge1$str$ptr + 2739836
+1   chromedriver                        0x0000000100ff0934 cxxbridge1$str$ptr + 2708700
+2   chromedriver                        0x0000000100b51f90 cxxbridge1$string$len + 93360
+3   chromedriver                        0x0000000100b98de4 cxxbridge1$string$len + 383748
+4   chromedriver                        0x0000000100bd9e80 cxxbridge1$string$len + 650144
+5   chromedriver                        0x0000000100b8d060 cxxbridge1$string$len + 335232
+6   chromedriver                        0x0000000100fc0c38 cxxbridge1$str$ptr + 2512864
+7   chromedriver                        0x0000000100fc3f58 cxxbridge1$str$ptr + 2525952
+8   chromedriver                        0x0000000100fa6578 cxxbridge1$str$ptr + 2404640
+9   chromedriver                        0x0000000100fc4818 cxxbridge1$str$ptr + 2528192
+10  chromedriver                        0x0000000100f96f2c cxxbridge1$str$ptr + 2341588
+11  chromedriver                        0x0000000100fe0a60 cxxbridge1$str$ptr + 2643464
+12  chromedriver                        0x0000000100fe0be8 cxxbridge1$str$ptr + 2643856
+13  chromedriver                        0x0000000100ff05a8 cxxbridge1$str$ptr + 2707792
+14  libsystem_pthread.dylib             0x0000000184e16f94 _pthread_start + 136
+15  libsystem_pthread.dylib             0x0000000184e11d34 thread_start + 8
+
+2025-03-03 09:46:35,453 - INFO - 
+🏫 Processing school 2/15: https://txschools.gov/?view=school&id=077901101&lng=en
+2025-03-03 09:46:37,316 - ERROR - ❌ Error processing school: Message: no such element: Unable to locate element: {"method":"css selector","selector":"button[aria-current='true']"}
+  (Session info: chrome=133.0.6943.142); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+0   chromedriver                        0x0000000100ff82d4 cxxbridge1$str$ptr + 2739836
+1   chromedriver                        0x0000000100ff0934 cxxbridge1$str$ptr + 2708700
+2   chromedriver                        0x0000000100b51f90 cxxbridge1$string$len + 93360
+3   chromedriver                        0x0000000100b98de4 cxxbridge1$string$len + 383748
+4   chromedriver                        0x0000000100bd9e80 cxxbridge1$string$len + 650144
+5   chromedriver                        0x0000000100b8d060 cxxbridge1$string$len + 335232
+6   chromedriver                        0x0000000100fc0c38 cxxbridge1$str$ptr + 2512864
+7   chromedriver                        0x0000000100fc3f58 cxxbridge1$str$ptr + 2525952
+8   chromedriver                        0x0000000100fa6578 cxxbridge1$str$ptr + 2404640
+9   chromedriver                        0x0000000100fc4818 cxxbridge1$str$ptr + 2528192
+10  chromedriver                        0x0000000100f96f2c cxxbridge1$str$ptr + 2341588
+11  chromedriver                        0x0000000100fe0a60 cxxbridge1$str$ptr + 2643464
+12  chromedriver                        0x0000000100fe0be8 cxxbridge1$str$ptr + 2643856
+13  chromedriver                        0x0000000100ff05a8 cxxbridge1$str$ptr + 2707792
+14  libsystem_pthread.dylib             0x0000000184e16f94 _pthread_start + 136
+15  libsystem_pthread.dylib             0x0000000184e11d34 thread_start + 8
+
+2025-03-03 09:46:37,316 - INFO - 
+🏫 Processing school 3/15: https://txschools.gov/?view=school&id=147903103&lng=en
+2025-03-03 09:46:39,740 - ERROR - ❌ Error processing school: Message: no such element: Unable to locate element: {"method":"css selector","selector":"button[aria-current='true']"}
+  (Session info: chrome=133.0.6943.142); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+0   chromedriver                        0x0000000100ff82d4 cxxbridge1$str$ptr + 2739836
+1   chromedriver                        0x0000000100ff0934 cxxbridge1$str$ptr + 2708700
+2   chromedriver                        0x0000000100b51f90 cxxbridge1$string$len + 93360
+3   chromedriver                        0x0000000100b98de4 cxxbridge1$string$len + 383748
+4   chromedriver                        0x0000000100bd9e80 cxxbridge1$string$len + 650144
+5   chromedriver                        0x0000000100b8d060 cxxbridge1$string$len + 335232
+6   chromedriver                        0x0000000100fc0c38 cxxbridge1$str$ptr + 2512864
+7   chromedriver                        0x0000000100fc3f58 cxxbridge1$str$ptr + 2525952
+8   chromedriver                        0x0000000100fa6578 cxxbridge1$str$ptr + 2404640
+9   chromedriver                        0x0000000100fc4818 cxxbridge1$str$ptr + 2528192
+10  chromedriver                        0x0000000100f96f2c cxxbridge1$str$ptr + 2341588
+11  chromedriver                        0x0000000100fe0a60 cxxbridge1$str$ptr + 2643464
+12  chromedriver                        0x0000000100fe0be8 cxxbridge1$str$ptr + 2643856
+13  chromedriver                        0x0000000100ff05a8 cxxbridge1$str$ptr + 2707792
+14  libsystem_pthread.dylib             0x0000000184e16f94 _pthread_start + 136
+15  libsystem_pthread.dylib             0x0000000184e11d34 thread_start + 8
+
+2025-03-03 09:46:39,740 - INFO - 
+🏫 Processing school 4/15: https://txschools.gov/?view=school&id=126905103&lng=en
+2025-03-03 09:46:41,666 - ERROR - ❌ Error processing school: Message: no such element: Unable to locate element: {"method":"css selector","selector":"button[aria-current='true']"}
+  (Session info: chrome=133.0.6943.142); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+0   chromedriver                        0x0000000100ff82d4 cxxbridge1$str$ptr + 2739836
+1   chromedriver                        0x0000000100ff0934 cxxbridge1$str$ptr + 2708700
+2   chromedriver                        0x0000000100b51f90 cxxbridge1$string$len + 93360
+3   chromedriver                        0x0000000100b98de4 cxxbridge1$string$len + 383748
+4   chromedriver                        0x0000000100bd9e80 cxxbridge1$string$len + 650144
+5   chromedriver                        0x0000000100b8d060 cxxbridge1$string$len + 335232
+6   chromedriver                        0x0000000100fc0c38 cxxbridge1$str$ptr + 2512864
+7   chromedriver                        0x0000000100fc3f58 cxxbridge1$str$ptr + 2525952
+8   chromedriver                        0x0000000100fa6578 cxxbridge1$str$ptr + 2404640
+9   chromedriver                        0x0000000100fc4818 cxxbridge1$str$ptr + 2528192
+10  chromedriver                        0x0000000100f96f2c cxxbridge1$str$ptr + 2341588
+11  chromedriver                        0x0000000100fe0a60 cxxbridge1$str$ptr + 2643464
+12  chromedriver                        0x0000000100fe0be8 cxxbridge1$str$ptr + 2643856
+13  chromedriver                        0x0000000100ff05a8 cxxbridge1$str$ptr + 2707792
+14  libsystem_pthread.dylib             0x0000000184e16f94 _pthread_start + 136
+15  libsystem_pthread.dylib             0x0000000184e11d34 thread_start + 8
+
+2025-03-03 09:46:41,667 - INFO - 
+🏫 Processing school 5/15: https://txschools.gov/?view=school&id=108902104&lng=en
+2025-03-03 09:46:44,364 - ERROR - ❌ Error processing school: Message: no such element: Unable to locate element: {"method":"css selector","selector":"button[aria-current='true']"}
+  (Session info: chrome=133.0.6943.142); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+0   chromedriver                        0x0000000100ff82d4 cxxbridge1$str$ptr + 2739836
+1   chromedriver                        0x0000000100ff0934 cxxbridge1$str$ptr + 2708700
+2   chromedriver                        0x0000000100b51f90 cxxbridge1$string$len + 93360
+3   chromedriver                        0x0000000100b98de4 cxxbridge1$string$len + 383748
+4   chromedriver                        0x0000000100bd9e80 cxxbridge1$string$len + 650144
+5   chromedriver                        0x0000000100b8d060 cxxbridge1$string$len + 335232
+6   chromedriver                        0x0000000100fc0c38 cxxbridge1$str$ptr + 2512864
+7   chromedriver                        0x0000000100fc3f58 cxxbridge1$str$ptr + 2525952
+8   chromedriver                        0x0000000100fa6578 cxxbridge1$str$ptr + 2404640
+9   chromedriver                        0x0000000100fc4818 cxxbridge1$str$ptr + 2528192
+10  chromedriver                        0x0000000100f96f2c cxxbridge1$str$ptr + 2341588
+11  chromedriver                        0x0000000100fe0a60 cxxbridge1$str$ptr + 2643464
+12  chromedriver                        0x0000000100fe0be8 cxxbridge1$str$ptr + 2643856
+13  chromedriver                        0x0000000100ff05a8 cxxbridge1$str$ptr + 2707792
+14  libsystem_pthread.dylib             0x0000000184e16f94 _pthread_start + 136
+15  libsystem_pthread.dylib             0x0000000184e11d34 thread_start + 8
+
+2025-03-03 09:46:44,364 - INFO - 
+🏫 Processing school 6/15: https://txschools.gov/?view=school&id=220905153&lng=en
+2025-03-03 09:46:47,132 - ERROR - ❌ Error processing school: Message: no such element: Unable to locate element: {"method":"css selector","selector":"button[aria-current='true']"}
+  (Session info: chrome=133.0.6943.142); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+0   chromedriver                        0x0000000100ff82d4 cxxbridge1$str$ptr + 2739836
+1   chromedriver                        0x0000000100ff0934 cxxbridge1$str$ptr + 2708700
+2   chromedriver                        0x0000000100b51f90 cxxbridge1$string$len + 93360
+3   chromedriver                        0x0000000100b98de4 cxxbridge1$string$len + 383748
+4   chromedriver                        0x0000000100bd9e80 cxxbridge1$string$len + 650144
+5   chromedriver                        0x0000000100b8d060 cxxbridge1$string$len + 335232
+6   chromedriver                        0x0000000100fc0c38 cxxbridge1$str$ptr + 2512864
+7   chromedriver                        0x0000000100fc3f58 cxxbridge1$str$ptr + 2525952
+8   chromedriver                        0x0000000100fa6578 cxxbridge1$str$ptr + 2404640
+9   chromedriver                        0x0000000100fc4818 cxxbridge1$str$ptr + 2528192
+10  chromedriver                        0x0000000100f96f2c cxxbridge1$str$ptr + 2341588
+11  chromedriver                        0x0000000100fe0a60 cxxbridge1$str$ptr + 2643464
+12  chromedriver                        0x0000000100fe0be8 cxxbridge1$str$ptr + 2643856
+13  chromedriver                        0x0000000100ff05a8 cxxbridge1$str$ptr + 2707792
+14  libsystem_pthread.dylib             0x0000000184e16f94 _pthread_start + 136
+15  libsystem_pthread.dylib             0x0000000184e11d34 thread_start + 8
+
+2025-03-03 09:46:47,132 - INFO - 
+🏫 Processing school 7/15: https://txschools.gov/?view=school&id=108913113&lng=en
+2025-03-03 09:46:49,396 - ERROR - ❌ Error processing school: Message: no such element: Unable to locate element: {"method":"css selector","selector":"button[aria-current='true']"}
+  (Session info: chrome=133.0.6943.142); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+0   chromedriver                        0x0000000100ff82d4 cxxbridge1$str$ptr + 2739836
+1   chromedriver                        0x0000000100ff0934 cxxbridge1$str$ptr + 2708700
+2   chromedriver                        0x0000000100b51f90 cxxbridge1$string$len + 93360
+3   chromedriver                        0x0000000100b98de4 cxxbridge1$string$len + 383748
+4   chromedriver                        0x0000000100bd9e80 cxxbridge1$string$len + 650144
+5   chromedriver                        0x0000000100b8d060 cxxbridge1$string$len + 335232
+6   chromedriver                        0x0000000100fc0c38 cxxbridge1$str$ptr + 2512864
+7   chromedriver                        0x0000000100fc3f58 cxxbridge1$str$ptr + 2525952
+8   chromedriver                        0x0000000100fa6578 cxxbridge1$str$ptr + 2404640
+9   chromedriver                        0x0000000100fc4818 cxxbridge1$str$ptr + 2528192
+10  chromedriver                        0x0000000100f96f2c cxxbridge1$str$ptr + 2341588
+11  chromedriver                        0x0000000100fe0a60 cxxbridge1$str$ptr + 2643464
+12  chromedriver                        0x0000000100fe0be8 cxxbridge1$str$ptr + 2643856
+13  chromedriver                        0x0000000100ff05a8 cxxbridge1$str$ptr + 2707792
+14  libsystem_pthread.dylib             0x0000000184e16f94 _pthread_start + 136
+15  libsystem_pthread.dylib             0x0000000184e11d34 thread_start + 8
+
+2025-03-03 09:46:49,396 - INFO - 
+🏫 Processing school 8/15: https://txschools.gov/?view=school&id=020905102&lng=en
+2025-03-03 09:46:51,735 - ERROR - ❌ Error processing school: Message: no such element: Unable to locate element: {"method":"css selector","selector":"button[aria-current='true']"}
+  (Session info: chrome=133.0.6943.142); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+0   chromedriver                        0x0000000100ff82d4 cxxbridge1$str$ptr + 2739836
+1   chromedriver                        0x0000000100ff0934 cxxbridge1$str$ptr + 2708700
+2   chromedriver                        0x0000000100b51f90 cxxbridge1$string$len + 93360
+3   chromedriver                        0x0000000100b98de4 cxxbridge1$string$len + 383748
+4   chromedriver                        0x0000000100bd9e80 cxxbridge1$string$len + 650144
+5   chromedriver                        0x0000000100b8d060 cxxbridge1$string$len + 335232
+6   chromedriver                        0x0000000100fc0c38 cxxbridge1$str$ptr + 2512864
+7   chromedriver                        0x0000000100fc3f58 cxxbridge1$str$ptr + 2525952
+8   chromedriver                        0x0000000100fa6578 cxxbridge1$str$ptr + 2404640
+9   chromedriver                        0x0000000100fc4818 cxxbridge1$str$ptr + 2528192
+10  chromedriver                        0x0000000100f96f2c cxxbridge1$str$ptr + 2341588
+11  chromedriver                        0x0000000100fe0a60 cxxbridge1$str$ptr + 2643464
+12  chromedriver                        0x0000000100fe0be8 cxxbridge1$str$ptr + 2643856
+13  chromedriver                        0x0000000100ff05a8 cxxbridge1$str$ptr + 2707792
+14  libsystem_pthread.dylib             0x0000000184e16f94 _pthread_start + 136
+15  libsystem_pthread.dylib             0x0000000184e11d34 thread_start + 8
+
+2025-03-03 09:46:51,735 - INFO - 
+🏫 Processing school 9/15: https://txschools.gov/?view=school&id=220917101&lng=en
+2025-03-03 09:46:54,271 - ERROR - ❌ Error processing school: Message: no such element: Unable to locate element: {"method":"css selector","selector":"button[aria-current='true']"}
+  (Session info: chrome=133.0.6943.142); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+0   chromedriver                        0x0000000100ff82d4 cxxbridge1$str$ptr + 2739836
+1   chromedriver                        0x0000000100ff0934 cxxbridge1$str$ptr + 2708700
+2   chromedriver                        0x0000000100b51f90 cxxbridge1$string$len + 93360
+3   chromedriver                        0x0000000100b98de4 cxxbridge1$string$len + 383748
+4   chromedriver                        0x0000000100bd9e80 cxxbridge1$string$len + 650144
+5   chromedriver                        0x0000000100b8d060 cxxbridge1$string$len + 335232
+6   chromedriver                        0x0000000100fc0c38 cxxbridge1$str$ptr + 2512864
+7   chromedriver                        0x0000000100fc3f58 cxxbridge1$str$ptr + 2525952
+8   chromedriver                        0x0000000100fa6578 cxxbridge1$str$ptr + 2404640
+9   chromedriver                        0x0000000100fc4818 cxxbridge1$str$ptr + 2528192
+10  chromedriver                        0x0000000100f96f2c cxxbridge1$str$ptr + 2341588
+11  chromedriver                        0x0000000100fe0a60 cxxbridge1$str$ptr + 2643464
+12  chromedriver                        0x0000000100fe0be8 cxxbridge1$str$ptr + 2643856
+13  chromedriver                        0x0000000100ff05a8 cxxbridge1$str$ptr + 2707792
+14  libsystem_pthread.dylib             0x0000000184e16f94 _pthread_start + 136
+15  libsystem_pthread.dylib             0x0000000184e11d34 thread_start + 8
+
+2025-03-03 09:46:54,272 - INFO - 
+🏫 Processing school 10/15: https://txschools.gov/?view=school&id=057829001&lng=en
+2025-03-03 09:46:56,758 - ERROR - ❌ Error processing school: Message: no such element: Unable to locate element: {"method":"css selector","selector":"button[aria-current='true']"}
+  (Session info: chrome=133.0.6943.142); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+0   chromedriver                        0x0000000100ff82d4 cxxbridge1$str$ptr + 2739836
+1   chromedriver                        0x0000000100ff0934 cxxbridge1$str$ptr + 2708700
+2   chromedriver                        0x0000000100b51f90 cxxbridge1$string$len + 93360
+3   chromedriver                        0x0000000100b98de4 cxxbridge1$string$len + 383748
+4   chromedriver                        0x0000000100bd9e80 cxxbridge1$string$len + 650144
+5   chromedriver                        0x0000000100b8d060 cxxbridge1$string$len + 335232
+6   chromedriver                        0x0000000100fc0c38 cxxbridge1$str$ptr + 2512864
+7   chromedriver                        0x0000000100fc3f58 cxxbridge1$str$ptr + 2525952
+8   chromedriver                        0x0000000100fa6578 cxxbridge1$str$ptr + 2404640
+9   chromedriver                        0x0000000100fc4818 cxxbridge1$str$ptr + 2528192
+10  chromedriver                        0x0000000100f96f2c cxxbridge1$str$ptr + 2341588
+11  chromedriver                        0x0000000100fe0a60 cxxbridge1$str$ptr + 2643464
+12  chromedriver                        0x0000000100fe0be8 cxxbridge1$str$ptr + 2643856
+13  chromedriver                        0x0000000100ff05a8 cxxbridge1$str$ptr + 2707792
+14  libsystem_pthread.dylib             0x0000000184e16f94 _pthread_start + 136
+15  libsystem_pthread.dylib             0x0000000184e11d34 thread_start + 8
+
+2025-03-03 09:46:56,758 - INFO - 
+🏫 Processing school 11/15: https://txschools.gov/?view=school&id=139911102&lng=en
+2025-03-03 09:46:58,749 - ERROR - ❌ Error processing school: Message: no such element: Unable to locate element: {"method":"css selector","selector":"button[aria-current='true']"}
+  (Session info: chrome=133.0.6943.142); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+0   chromedriver                        0x0000000100ff82d4 cxxbridge1$str$ptr + 2739836
+1   chromedriver                        0x0000000100ff0934 cxxbridge1$str$ptr + 2708700
+2   chromedriver                        0x0000000100b51f90 cxxbridge1$string$len + 93360
+3   chromedriver                        0x0000000100b98de4 cxxbridge1$string$len + 383748
+4   chromedriver                        0x0000000100bd9e80 cxxbridge1$string$len + 650144
+5   chromedriver                        0x0000000100b8d060 cxxbridge1$string$len + 335232
+6   chromedriver                        0x0000000100fc0c38 cxxbridge1$str$ptr + 2512864
+7   chromedriver                        0x0000000100fc3f58 cxxbridge1$str$ptr + 2525952
+8   chromedriver                        0x0000000100fa6578 cxxbridge1$str$ptr + 2404640
+9   chromedriver                        0x0000000100fc4818 cxxbridge1$str$ptr + 2528192
+10  chromedriver                        0x0000000100f96f2c cxxbridge1$str$ptr + 2341588
+11  chromedriver                        0x0000000100fe0a60 cxxbridge1$str$ptr + 2643464
+12  chromedriver                        0x0000000100fe0be8 cxxbridge1$str$ptr + 2643856
+13  chromedriver                        0x0000000100ff05a8 cxxbridge1$str$ptr + 2707792
+14  libsystem_pthread.dylib             0x0000000184e16f94 _pthread_start + 136
+15  libsystem_pthread.dylib             0x0000000184e11d34 thread_start + 8
+
+2025-03-03 09:46:58,749 - INFO - 
+🏫 Processing school 12/15: https://txschools.gov/?view=school&id=057909143&lng=en
+2025-03-03 09:47:00,708 - ERROR - ❌ Error processing school: Message: no such element: Unable to locate element: {"method":"css selector","selector":"button[aria-current='true']"}
+  (Session info: chrome=133.0.6943.142); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+0   chromedriver                        0x0000000100ff82d4 cxxbridge1$str$ptr + 2739836
+1   chromedriver                        0x0000000100ff0934 cxxbridge1$str$ptr + 2708700
+2   chromedriver                        0x0000000100b51f90 cxxbridge1$string$len + 93360
+3   chromedriver                        0x0000000100b98de4 cxxbridge1$string$len + 383748
+4   chromedriver                        0x0000000100bd9e80 cxxbridge1$string$len + 650144
+5   chromedriver                        0x0000000100b8d060 cxxbridge1$string$len + 335232
+6   chromedriver                        0x0000000100fc0c38 cxxbridge1$str$ptr + 2512864
+7   chromedriver                        0x0000000100fc3f58 cxxbridge1$str$ptr + 2525952
+8   chromedriver                        0x0000000100fa6578 cxxbridge1$str$ptr + 2404640
+9   chromedriver                        0x0000000100fc4818 cxxbridge1$str$ptr + 2528192
+10  chromedriver                        0x0000000100f96f2c cxxbridge1$str$ptr + 2341588
+11  chromedriver                        0x0000000100fe0a60 cxxbridge1$str$ptr + 2643464
+12  chromedriver                        0x0000000100fe0be8 cxxbridge1$str$ptr + 2643856
+13  chromedriver                        0x0000000100ff05a8 cxxbridge1$str$ptr + 2707792
+14  libsystem_pthread.dylib             0x0000000184e16f94 _pthread_start + 136
+15  libsystem_pthread.dylib             0x0000000184e11d34 thread_start + 8
+
+2025-03-03 09:47:00,708 - INFO - 
+🏫 Processing school 13/15: https://txschools.gov/?view=school&id=109901001&lng=en
+2025-03-03 09:47:03,078 - ERROR - ❌ Error processing school: Message: no such element: Unable to locate element: {"method":"css selector","selector":"button[aria-current='true']"}
+  (Session info: chrome=133.0.6943.142); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+0   chromedriver                        0x0000000100ff82d4 cxxbridge1$str$ptr + 2739836
+1   chromedriver                        0x0000000100ff0934 cxxbridge1$str$ptr + 2708700
+2   chromedriver                        0x0000000100b51f90 cxxbridge1$string$len + 93360
+3   chromedriver                        0x0000000100b98de4 cxxbridge1$string$len + 383748
+4   chromedriver                        0x0000000100bd9e80 cxxbridge1$string$len + 650144
+5   chromedriver                        0x0000000100b8d060 cxxbridge1$string$len + 335232
+6   chromedriver                        0x0000000100fc0c38 cxxbridge1$str$ptr + 2512864
+7   chromedriver                        0x0000000100fc3f58 cxxbridge1$str$ptr + 2525952
+8   chromedriver                        0x0000000100fa6578 cxxbridge1$str$ptr + 2404640
+9   chromedriver                        0x0000000100fc4818 cxxbridge1$str$ptr + 2528192
+10  chromedriver                        0x0000000100f96f2c cxxbridge1$str$ptr + 2341588
+11  chromedriver                        0x0000000100fe0a60 cxxbridge1$str$ptr + 2643464
+12  chromedriver                        0x0000000100fe0be8 cxxbridge1$str$ptr + 2643856
+13  chromedriver                        0x0000000100ff05a8 cxxbridge1$str$ptr + 2707792
+14  libsystem_pthread.dylib             0x0000000184e16f94 _pthread_start + 136
+15  libsystem_pthread.dylib             0x0000000184e11d34 thread_start + 8
+
+2025-03-03 09:47:03,078 - INFO - 
+🏫 Processing school 14/15: https://txschools.gov/?view=school&id=095901101&lng=en
+2025-03-03 09:47:05,516 - ERROR - ❌ Error processing school: Message: no such element: Unable to locate element: {"method":"css selector","selector":"button[aria-current='true']"}
+  (Session info: chrome=133.0.6943.142); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+0   chromedriver                        0x0000000100ff82d4 cxxbridge1$str$ptr + 2739836
+1   chromedriver                        0x0000000100ff0934 cxxbridge1$str$ptr + 2708700
+2   chromedriver                        0x0000000100b51f90 cxxbridge1$string$len + 93360
+3   chromedriver                        0x0000000100b98de4 cxxbridge1$string$len + 383748
+4   chromedriver                        0x0000000100bd9e80 cxxbridge1$string$len + 650144
+5   chromedriver                        0x0000000100b8d060 cxxbridge1$string$len + 335232
+6   chromedriver                        0x0000000100fc0c38 cxxbridge1$str$ptr + 2512864
+7   chromedriver                        0x0000000100fc3f58 cxxbridge1$str$ptr + 2525952
+8   chromedriver                        0x0000000100fa6578 cxxbridge1$str$ptr + 2404640
+9   chromedriver                        0x0000000100fc4818 cxxbridge1$str$ptr + 2528192
+10  chromedriver                        0x0000000100f96f2c cxxbridge1$str$ptr + 2341588
+11  chromedriver                        0x0000000100fe0a60 cxxbridge1$str$ptr + 2643464
+12  chromedriver                        0x0000000100fe0be8 cxxbridge1$str$ptr + 2643856
+13  chromedriver                        0x0000000100ff05a8 cxxbridge1$str$ptr + 2707792
+14  libsystem_pthread.dylib             0x0000000184e16f94 _pthread_start + 136
+15  libsystem_pthread.dylib             0x0000000184e11d34 thread_start + 8
+
+2025-03-03 09:47:05,516 - INFO - 
+🏫 Processing school 15/15: https://txschools.gov/?view=school&id=014901102&lng=en
+2025-03-03 09:47:08,001 - ERROR - ❌ Error processing school: Message: no such element: Unable to locate element: {"method":"css selector","selector":"button[aria-current='true']"}
+  (Session info: chrome=133.0.6943.142); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+0   chromedriver                        0x0000000100ff82d4 cxxbridge1$str$ptr + 2739836
+1   chromedriver                        0x0000000100ff0934 cxxbridge1$str$ptr + 2708700
+2   chromedriver                        0x0000000100b51f90 cxxbridge1$string$len + 93360
+3   chromedriver                        0x0000000100b98de4 cxxbridge1$string$len + 383748
+4   chromedriver                        0x0000000100bd9e80 cxxbridge1$string$len + 650144
+5   chromedriver                        0x0000000100b8d060 cxxbridge1$string$len + 335232
+6   chromedriver                        0x0000000100fc0c38 cxxbridge1$str$ptr + 2512864
+7   chromedriver                        0x0000000100fc3f58 cxxbridge1$str$ptr + 2525952
+8   chromedriver                        0x0000000100fa6578 cxxbridge1$str$ptr + 2404640
+9   chromedriver                        0x0000000100fc4818 cxxbridge1$str$ptr + 2528192
+10  chromedriver                        0x0000000100f96f2c cxxbridge1$str$ptr + 2341588
+11  chromedriver                        0x0000000100fe0a60 cxxbridge1$str$ptr + 2643464
+12  chromedriver                        0x0000000100fe0be8 cxxbridge1$str$ptr + 2643856
+13  chromedriver                        0x0000000100ff05a8 cxxbridge1$str$ptr + 2707792
+14  libsystem_pthread.dylib             0x0000000184e16f94 _pthread_start + 136
+15  libsystem_pthread.dylib             0x0000000184e11d34 thread_start + 8
+
+2025-03-03 09:47:08,001 - WARNING - ⚠️ No data to save
+2025-03-03 09:47:15,197 - INFO - 🚀 Starting scraping process...
+2025-03-03 09:47:18,348 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(54, 'Connection reset by peer')': /session/237a1bdc388f9783dd277273af8cf398
+2025-03-03 09:47:18,349 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10350e990>: Failed to establish a new connection: [Errno 61] Connection refused')': /session/237a1bdc388f9783dd277273af8cf398
+2025-03-03 09:47:18,350 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10350e490>: Failed to establish a new connection: [Errno 61] Connection refused')': /session/237a1bdc388f9783dd277273af8cf398
+2025-03-03 09:47:22,464 - INFO - 🚀 Starting scraping process...
+2025-03-03 09:47:27,563 - INFO - 🔍 Starting link collection...
+2025-03-03 09:47:33,511 - INFO - 📃 Getting links from page 1
+2025-03-03 09:47:33,619 - INFO - ✅ Links found on page 1: 15
+2025-03-03 09:47:33,620 - INFO - 🏁 Maximum page limit reached
+2025-03-03 09:47:33,620 - INFO - 📊 Total links collected: 15
+2025-03-03 09:47:33,620 - INFO - 🔄 Starting link processing...
+2025-03-03 09:47:33,620 - INFO - 
+🏫 Processing school 1/15: https://txschools.gov/?view=school&id=108913118&lng=en
+2025-03-03 09:47:36,618 - INFO - School: 21ST CENTURY EARLY LEARNING FOUNDATIONS ACADEMY
+2025-03-03 09:47:36,618 - INFO - Quality Score: 100
+2025-03-03 09:47:36,618 - INFO - Quality Issues: 
+2025-03-03 09:47:36,618 - INFO - ✅ Data extracted: 21ST CENTURY EARLY LEARNING FOUNDATIONS ACADEMY
+2025-03-03 09:47:39,462 - INFO - 
+🏫 Processing school 2/15: https://txschools.gov/?view=school&id=077901101&lng=en
+2025-03-03 09:47:41,553 - INFO - School: A B DUNCAN COLLEGIATE ELEM
+2025-03-03 09:47:41,553 - INFO - Quality Score: 100
+2025-03-03 09:47:41,553 - INFO - Quality Issues: 
+2025-03-03 09:47:41,553 - INFO - ✅ Data extracted: A B DUNCAN COLLEGIATE ELEM
+2025-03-03 09:47:44,012 - INFO - 
+🏫 Processing school 3/15: https://txschools.gov/?view=school&id=147903103&lng=en
+2025-03-03 09:47:46,783 - INFO - School: A B MCBAY ELEM
+2025-03-03 09:47:46,783 - INFO - Quality Score: 100
+2025-03-03 09:47:46,783 - INFO - Quality Issues: 
+2025-03-03 09:47:46,783 - INFO - ✅ Data extracted: A B MCBAY ELEM
+2025-03-03 09:47:49,115 - INFO - 
+🏫 Processing school 4/15: https://txschools.gov/?view=school&id=126905103&lng=en
+2025-03-03 09:47:52,227 - INFO - School: A G ELDER ELEM
+2025-03-03 09:47:52,227 - INFO - Quality Score: 100
+2025-03-03 09:47:52,227 - INFO - Quality Issues: 
+2025-03-03 09:47:52,227 - INFO - ✅ Data extracted: A G ELDER ELEM
+2025-03-03 09:47:54,728 - INFO - 
+🏫 Processing school 5/15: https://txschools.gov/?view=school&id=108902104&lng=en
+2025-03-03 09:47:57,541 - INFO - School: A M OCHOA ELEM
+2025-03-03 09:47:57,541 - INFO - Quality Score: 100
+2025-03-03 09:47:57,542 - INFO - Quality Issues: 
+2025-03-03 09:47:57,542 - INFO - ✅ Data extracted: A M OCHOA ELEM
+2025-03-03 09:48:00,373 - INFO - 
+🏫 Processing school 6/15: https://txschools.gov/?view=school&id=220905153&lng=en
+2025-03-03 09:48:03,309 - INFO - School: A M PATE ELEM
+2025-03-03 09:48:03,309 - INFO - Quality Score: 100
+2025-03-03 09:48:03,309 - INFO - Quality Issues: 
+2025-03-03 09:48:03,309 - INFO - ✅ Data extracted: A M PATE ELEM
+2025-03-03 09:48:04,350 - INFO - 
+🏫 Processing school 7/15: https://txschools.gov/?view=school&id=108913113&lng=en
+2025-03-03 09:48:06,931 - INFO - School: A N RICO ELEM
+2025-03-03 09:48:06,931 - INFO - Quality Score: 100
+2025-03-03 09:48:06,931 - INFO - Quality Issues: 
+2025-03-03 09:48:06,931 - INFO - ✅ Data extracted: A N RICO ELEM
+2025-03-03 09:48:08,610 - INFO - 
+🏫 Processing school 8/15: https://txschools.gov/?view=school&id=020905102&lng=en
+2025-03-03 09:48:15,563 - INFO - School: A P BEUTEL ELEM
+2025-03-03 09:48:15,564 - INFO - Quality Score: 90
+2025-03-03 09:48:15,564 - INFO - Quality Issues: School Website not available
+2025-03-03 09:48:15,564 - INFO - ✅ Data extracted: A P BEUTEL ELEM
+2025-03-03 09:48:17,210 - INFO - 
+🏫 Processing school 9/15: https://txschools.gov/?view=school&id=220917101&lng=en
+2025-03-03 09:48:19,713 - INFO - School: A V CATO ELEM
+2025-03-03 09:48:19,713 - INFO - Quality Score: 100
+2025-03-03 09:48:19,713 - INFO - Quality Issues: 
+2025-03-03 09:48:19,713 - INFO - ✅ Data extracted: A V CATO ELEM
+2025-03-03 09:48:21,028 - INFO - 
+🏫 Processing school 10/15: https://txschools.gov/?view=school&id=057829001&lng=en
+2025-03-03 09:48:23,086 - INFO - School: A+ ACADEMY ELEM
+2025-03-03 09:48:23,086 - INFO - Quality Score: 100
+2025-03-03 09:48:23,086 - INFO - Quality Issues: 
+2025-03-03 09:48:23,088 - INFO - ✅ Data extracted: A+ ACADEMY ELEM
+2025-03-03 09:48:24,486 - INFO - 
+🏫 Processing school 11/15: https://txschools.gov/?view=school&id=139911102&lng=en
+2025-03-03 09:48:26,748 - INFO - School: AARON PARKER ELEM
+2025-03-03 09:48:26,748 - INFO - Quality Score: 100
+2025-03-03 09:48:26,748 - INFO - Quality Issues: 
+2025-03-03 09:48:26,748 - INFO - ✅ Data extracted: AARON PARKER ELEM
+2025-03-03 09:48:28,100 - INFO - 
+🏫 Processing school 12/15: https://txschools.gov/?view=school&id=057909143&lng=en
+2025-03-03 09:48:30,448 - INFO - School: ABBETT ELEM
+2025-03-03 09:48:30,449 - INFO - Quality Score: 100
+2025-03-03 09:48:30,449 - INFO - Quality Issues: 
+2025-03-03 09:48:30,449 - INFO - ✅ Data extracted: ABBETT ELEM
+2025-03-03 09:48:32,802 - INFO - 
+🏫 Processing school 13/15: https://txschools.gov/?view=school&id=109901001&lng=en
+2025-03-03 09:48:35,479 - INFO - School: ABBOTT SCHOOL
+2025-03-03 09:48:35,479 - INFO - Quality Score: 100
+2025-03-03 09:48:35,479 - INFO - Quality Issues: 
+2025-03-03 09:48:35,479 - INFO - ✅ Data extracted: ABBOTT SCHOOL
+2025-03-03 09:48:38,421 - INFO - 
+🏫 Processing school 14/15: https://txschools.gov/?view=school&id=095901101&lng=en
+2025-03-03 09:48:40,857 - INFO - School: ABERNATHY ELEM
+2025-03-03 09:48:40,857 - INFO - Quality Score: 100
+2025-03-03 09:48:40,857 - INFO - Quality Issues: 
+2025-03-03 09:48:40,857 - INFO - ✅ Data extracted: ABERNATHY ELEM
+2025-03-03 09:48:43,484 - INFO - 
+🏫 Processing school 15/15: https://txschools.gov/?view=school&id=014901102&lng=en
+2025-03-03 09:48:45,734 - INFO - School: ACADEMY EARLY CHILDHOOD CENTER
+2025-03-03 09:48:45,734 - INFO - Quality Score: 100
+2025-03-03 09:48:45,734 - INFO - Quality Issues: 
+2025-03-03 09:48:45,735 - INFO - ✅ Data extracted: ACADEMY EARLY CHILDHOOD CENTER
+2025-03-03 09:48:47,171 - INFO - 
+=== Data Quality Summary ===
+2025-03-03 09:48:47,172 - INFO - Total schools processed: 15
+2025-03-03 09:48:47,172 - INFO - Average quality score: 99.33%
+2025-03-03 09:48:47,172 - INFO - Schools with quality issues: 1
+2025-03-03 09:48:47,172 - INFO - Quality rate: 93.33%
+2025-03-03 09:48:47,172 - INFO - Data saved to: output/schools_data_pages_1_to_1.csv
+2025-03-03 09:48:47,174 - INFO - 📂 Data saved to schools_data_pages_1_to_1.csv
+2025-03-03 09:48:47,174 - INFO - 📊 Total schools processed: 15
+2025-03-03 09:49:13,147 - INFO - 🚀 Starting scraping process...
+2025-03-03 09:49:18,436 - INFO - 🔍 Starting link collection...
+2025-03-03 09:49:24,385 - INFO - 📃 Getting links from page 1
+2025-03-03 09:49:24,508 - INFO - ✅ Links found on page 1: 15
+2025-03-03 09:49:24,508 - INFO - 🏁 Maximum page limit reached
+2025-03-03 09:49:24,508 - INFO - 📊 Total links collected: 15
+2025-03-03 09:49:24,508 - INFO - 🔄 Starting link processing...
+2025-03-03 09:49:24,508 - INFO - 
+🏫 Processing school 1/15: https://txschools.gov/?view=school&id=108913118&lng=en&page=1
+2025-03-03 09:49:27,396 - INFO - School: 21ST CENTURY EARLY LEARNING FOUNDATIONS ACADEMY
+2025-03-03 09:49:27,396 - INFO - Quality Score: 100
+2025-03-03 09:49:27,396 - INFO - Quality Issues: 
+2025-03-03 09:49:27,396 - INFO - ✅ Data extracted: 21ST CENTURY EARLY LEARNING FOUNDATIONS ACADEMY
+2025-03-03 09:49:28,641 - INFO - 
+🏫 Processing school 2/15: https://txschools.gov/?view=school&id=077901101&lng=en&page=1
+2025-03-03 09:49:31,177 - INFO - School: A B DUNCAN COLLEGIATE ELEM
+2025-03-03 09:49:31,177 - INFO - Quality Score: 100
+2025-03-03 09:49:31,177 - INFO - Quality Issues: 
+2025-03-03 09:49:31,177 - INFO - ✅ Data extracted: A B DUNCAN COLLEGIATE ELEM
+2025-03-03 09:49:32,454 - INFO - 
+🏫 Processing school 3/15: https://txschools.gov/?view=school&id=147903103&lng=en&page=1
+2025-03-03 09:49:34,630 - INFO - School: A B MCBAY ELEM
+2025-03-03 09:49:34,630 - INFO - Quality Score: 100
+2025-03-03 09:49:34,630 - INFO - Quality Issues: 
+2025-03-03 09:49:34,630 - INFO - ✅ Data extracted: A B MCBAY ELEM
+2025-03-03 09:49:36,477 - INFO - 
+🏫 Processing school 4/15: https://txschools.gov/?view=school&id=126905103&lng=en&page=1
+2025-03-03 09:49:38,836 - INFO - School: A G ELDER ELEM
+2025-03-03 09:49:38,836 - INFO - Quality Score: 100
+2025-03-03 09:49:38,836 - INFO - Quality Issues: 
+2025-03-03 09:49:38,836 - INFO - ✅ Data extracted: A G ELDER ELEM
+2025-03-03 09:49:40,419 - INFO - 
+🏫 Processing school 5/15: https://txschools.gov/?view=school&id=108902104&lng=en&page=1
+2025-03-03 09:49:42,781 - INFO - School: A M OCHOA ELEM
+2025-03-03 09:49:42,782 - INFO - Quality Score: 100
+2025-03-03 09:49:42,782 - INFO - Quality Issues: 
+2025-03-03 09:49:42,782 - INFO - ✅ Data extracted: A M OCHOA ELEM
+2025-03-03 09:49:44,180 - INFO - 
+🏫 Processing school 6/15: https://txschools.gov/?view=school&id=220905153&lng=en&page=1
+2025-03-03 09:49:46,655 - INFO - School: A M PATE ELEM
+2025-03-03 09:49:46,655 - INFO - Quality Score: 100
+2025-03-03 09:49:46,655 - INFO - Quality Issues: 
+2025-03-03 09:49:46,655 - INFO - ✅ Data extracted: A M PATE ELEM
+2025-03-03 09:49:49,613 - INFO - 
+🏫 Processing school 7/15: https://txschools.gov/?view=school&id=108913113&lng=en&page=1
+2025-03-03 09:49:52,134 - INFO - School: A N RICO ELEM
+2025-03-03 09:49:52,134 - INFO - Quality Score: 100
+2025-03-03 09:49:52,134 - INFO - Quality Issues: 
+2025-03-03 09:49:52,134 - INFO - ✅ Data extracted: A N RICO ELEM
+2025-03-03 09:49:53,975 - INFO - 
+🏫 Processing school 8/15: https://txschools.gov/?view=school&id=020905102&lng=en&page=1
+2025-03-03 09:50:01,575 - INFO - School: A P BEUTEL ELEM
+2025-03-03 09:50:01,576 - INFO - Quality Score: 90
+2025-03-03 09:50:01,576 - INFO - Quality Issues: School Website not available
+2025-03-03 09:50:01,576 - INFO - ✅ Data extracted: A P BEUTEL ELEM
+2025-03-03 09:50:02,611 - INFO - 
+🏫 Processing school 9/15: https://txschools.gov/?view=school&id=220917101&lng=en&page=1
+2025-03-03 09:50:04,796 - INFO - School: A V CATO ELEM
+2025-03-03 09:50:04,796 - INFO - Quality Score: 100
+2025-03-03 09:50:04,796 - INFO - Quality Issues: 
+2025-03-03 09:50:04,796 - INFO - ✅ Data extracted: A V CATO ELEM
+2025-03-03 09:50:05,994 - INFO - 
+🏫 Processing school 10/15: https://txschools.gov/?view=school&id=057829001&lng=en&page=1
+2025-03-03 09:50:08,279 - INFO - School: A+ ACADEMY ELEM
+2025-03-03 09:50:08,280 - INFO - Quality Score: 100
+2025-03-03 09:50:08,280 - INFO - Quality Issues: 
+2025-03-03 09:50:08,280 - INFO - ✅ Data extracted: A+ ACADEMY ELEM
+2025-03-03 09:50:09,853 - INFO - 
+🏫 Processing school 11/15: https://txschools.gov/?view=school&id=139911102&lng=en&page=1
+2025-03-03 09:50:12,507 - INFO - School: AARON PARKER ELEM
+2025-03-03 09:50:12,507 - INFO - Quality Score: 100
+2025-03-03 09:50:12,507 - INFO - Quality Issues: 
+2025-03-03 09:50:12,507 - INFO - ✅ Data extracted: AARON PARKER ELEM
+2025-03-03 09:50:13,694 - INFO - 
+🏫 Processing school 12/15: https://txschools.gov/?view=school&id=057909143&lng=en&page=1
+2025-03-03 09:50:16,421 - INFO - School: ABBETT ELEM
+2025-03-03 09:50:16,422 - INFO - Quality Score: 100
+2025-03-03 09:50:16,422 - INFO - Quality Issues: 
+2025-03-03 09:50:16,422 - INFO - ✅ Data extracted: ABBETT ELEM
+2025-03-03 09:50:18,892 - INFO - 
+🏫 Processing school 13/15: https://txschools.gov/?view=school&id=109901001&lng=en&page=1
+2025-03-03 09:50:21,897 - INFO - School: ABBOTT SCHOOL
+2025-03-03 09:50:21,897 - INFO - Quality Score: 100
+2025-03-03 09:50:21,897 - INFO - Quality Issues: 
+2025-03-03 09:50:21,897 - INFO - ✅ Data extracted: ABBOTT SCHOOL
+2025-03-03 09:50:24,230 - INFO - 
+🏫 Processing school 14/15: https://txschools.gov/?view=school&id=095901101&lng=en&page=1
+2025-03-03 09:50:26,628 - INFO - School: ABERNATHY ELEM
+2025-03-03 09:50:26,628 - INFO - Quality Score: 100
+2025-03-03 09:50:26,628 - INFO - Quality Issues: 
+2025-03-03 09:50:26,629 - INFO - ✅ Data extracted: ABERNATHY ELEM
+2025-03-03 09:50:29,095 - INFO - 
+🏫 Processing school 15/15: https://txschools.gov/?view=school&id=014901102&lng=en&page=1
+2025-03-03 09:50:31,670 - INFO - School: ACADEMY EARLY CHILDHOOD CENTER
+2025-03-03 09:50:31,670 - INFO - Quality Score: 100
+2025-03-03 09:50:31,671 - INFO - Quality Issues: 
+2025-03-03 09:50:31,671 - INFO - ✅ Data extracted: ACADEMY EARLY CHILDHOOD CENTER
+2025-03-03 09:50:33,955 - INFO - 
+=== Data Quality Summary ===
+2025-03-03 09:50:33,955 - INFO - Total schools processed: 15
+2025-03-03 09:50:33,955 - INFO - Average quality score: 99.33%
+2025-03-03 09:50:33,955 - INFO - Schools with quality issues: 1
+2025-03-03 09:50:33,955 - INFO - Quality rate: 93.33%
+2025-03-03 09:50:33,955 - INFO - Data saved to: output/schools_data_pages_1_to_1.csv
+2025-03-03 09:50:33,957 - INFO - 📂 Data saved to schools_data_pages_1_to_1.csv
+2025-03-03 09:50:33,957 - INFO - 📊 Total schools processed: 15
+2025-03-03 09:52:16,100 - INFO - 🚀 Starting scraping process...
+2025-03-03 09:52:20,878 - INFO - 🔍 Starting link collection...
+2025-03-03 09:52:26,793 - INFO - 📃 Getting links from page 1
+2025-03-03 09:52:26,902 - INFO - ✅ Links found on page 1: 15
+2025-03-03 09:52:26,902 - INFO - 🏁 Maximum page limit reached
+2025-03-03 09:52:26,902 - INFO - 📊 Total links collected: 15
+2025-03-03 09:52:26,902 - INFO - 🔄 Starting link processing...
+2025-03-03 09:52:26,902 - INFO - 
+🏫 Processing school 1/15: https://txschools.gov/?view=school&id=108913118&lng=en&page=1
+2025-03-03 09:52:29,947 - INFO - School: 21ST CENTURY EARLY LEARNING FOUNDATIONS ACADEMY
+2025-03-03 09:52:29,947 - INFO - Quality Score: 100
+2025-03-03 09:52:29,947 - INFO - Quality Issues: 
+2025-03-03 09:52:29,947 - INFO - ✅ Data extracted: 21ST CENTURY EARLY LEARNING FOUNDATIONS ACADEMY
+2025-03-03 09:52:32,035 - INFO - 
+🏫 Processing school 2/15: https://txschools.gov/?view=school&id=077901101&lng=en&page=1
+2025-03-03 09:52:34,814 - INFO - School: A B DUNCAN COLLEGIATE ELEM
+2025-03-03 09:52:34,815 - INFO - Quality Score: 100
+2025-03-03 09:52:34,815 - INFO - Quality Issues: 
+2025-03-03 09:52:34,815 - INFO - ✅ Data extracted: A B DUNCAN COLLEGIATE ELEM
+2025-03-03 09:52:36,858 - INFO - 
+🏫 Processing school 3/15: https://txschools.gov/?view=school&id=147903103&lng=en&page=1
+2025-03-03 09:52:38,817 - INFO - School: A B MCBAY ELEM
+2025-03-03 09:52:38,817 - INFO - Quality Score: 100
+2025-03-03 09:52:38,817 - INFO - Quality Issues: 
+2025-03-03 09:52:38,817 - INFO - ✅ Data extracted: A B MCBAY ELEM
+2025-03-03 09:52:41,575 - INFO - 
+🏫 Processing school 4/15: https://txschools.gov/?view=school&id=126905103&lng=en&page=1
+2025-03-03 09:52:44,098 - INFO - School: A G ELDER ELEM
+2025-03-03 09:52:44,098 - INFO - Quality Score: 100
+2025-03-03 09:52:44,098 - INFO - Quality Issues: 
+2025-03-03 09:52:44,098 - INFO - ✅ Data extracted: A G ELDER ELEM
+2025-03-03 09:52:45,881 - INFO - 
+🏫 Processing school 5/15: https://txschools.gov/?view=school&id=108902104&lng=en&page=1
+2025-03-03 09:52:47,748 - INFO - School: A M OCHOA ELEM
+2025-03-03 09:52:47,748 - INFO - Quality Score: 100
+2025-03-03 09:52:47,748 - INFO - Quality Issues: 
+2025-03-03 09:52:47,748 - INFO - ✅ Data extracted: A M OCHOA ELEM
+2025-03-03 09:52:49,511 - INFO - 
+🏫 Processing school 6/15: https://txschools.gov/?view=school&id=220905153&lng=en&page=1
+2025-03-03 09:52:51,896 - INFO - School: A M PATE ELEM
+2025-03-03 09:52:51,896 - INFO - Quality Score: 100
+2025-03-03 09:52:51,896 - INFO - Quality Issues: 
+2025-03-03 09:52:51,896 - INFO - ✅ Data extracted: A M PATE ELEM
+2025-03-03 09:52:53,409 - INFO - 
+🏫 Processing school 7/15: https://txschools.gov/?view=school&id=108913113&lng=en&page=1
+2025-03-03 09:52:55,884 - INFO - School: A N RICO ELEM
+2025-03-03 09:52:55,885 - INFO - Quality Score: 100
+2025-03-03 09:52:55,885 - INFO - Quality Issues: 
+2025-03-03 09:52:55,885 - INFO - ✅ Data extracted: A N RICO ELEM
+2025-03-03 09:52:58,428 - INFO - 
+🏫 Processing school 8/15: https://txschools.gov/?view=school&id=020905102&lng=en&page=1
+2025-03-03 09:53:06,014 - INFO - School: A P BEUTEL ELEM
+2025-03-03 09:53:06,014 - INFO - Quality Score: 90
+2025-03-03 09:53:06,014 - INFO - Quality Issues: School Website not available
+2025-03-03 09:53:06,014 - INFO - ✅ Data extracted: A P BEUTEL ELEM
+2025-03-03 09:53:08,275 - INFO - 
+🏫 Processing school 9/15: https://txschools.gov/?view=school&id=220917101&lng=en&page=1
+2025-03-03 09:53:10,993 - INFO - School: A V CATO ELEM
+2025-03-03 09:53:10,994 - INFO - Quality Score: 100
+2025-03-03 09:53:10,994 - INFO - Quality Issues: 
+2025-03-03 09:53:10,994 - INFO - ✅ Data extracted: A V CATO ELEM
+2025-03-03 09:53:13,811 - INFO - 
+🏫 Processing school 10/15: https://txschools.gov/?view=school&id=057829001&lng=en&page=1
+2025-03-03 09:53:15,835 - INFO - School: A+ ACADEMY ELEM
+2025-03-03 09:53:15,835 - INFO - Quality Score: 100
+2025-03-03 09:53:15,835 - INFO - Quality Issues: 
+2025-03-03 09:53:15,836 - INFO - ✅ Data extracted: A+ ACADEMY ELEM
+2025-03-03 09:53:18,795 - INFO - 
+🏫 Processing school 11/15: https://txschools.gov/?view=school&id=139911102&lng=en&page=1
+2025-03-03 09:53:21,052 - INFO - School: AARON PARKER ELEM
+2025-03-03 09:53:21,053 - INFO - Quality Score: 100
+2025-03-03 09:53:21,053 - INFO - Quality Issues: 
+2025-03-03 09:53:21,053 - INFO - ✅ Data extracted: AARON PARKER ELEM
+2025-03-03 09:53:23,323 - INFO - 
+🏫 Processing school 12/15: https://txschools.gov/?view=school&id=057909143&lng=en&page=1
+2025-03-03 09:53:26,168 - INFO - School: ABBETT ELEM
+2025-03-03 09:53:26,168 - INFO - Quality Score: 100
+2025-03-03 09:53:26,168 - INFO - Quality Issues: 
+2025-03-03 09:53:26,168 - INFO - ✅ Data extracted: ABBETT ELEM
+2025-03-03 09:53:28,984 - INFO - 
+🏫 Processing school 13/15: https://txschools.gov/?view=school&id=109901001&lng=en&page=1
+2025-03-03 09:53:31,768 - INFO - School: ABBOTT SCHOOL
+2025-03-03 09:53:31,769 - INFO - Quality Score: 100
+2025-03-03 09:53:31,769 - INFO - Quality Issues: 
+2025-03-03 09:53:31,769 - INFO - ✅ Data extracted: ABBOTT SCHOOL
+2025-03-03 09:53:32,920 - INFO - 
+🏫 Processing school 14/15: https://txschools.gov/?view=school&id=095901101&lng=en&page=1
+2025-03-03 09:53:35,386 - INFO - School: ABERNATHY ELEM
+2025-03-03 09:53:35,386 - INFO - Quality Score: 100
+2025-03-03 09:53:35,386 - INFO - Quality Issues: 
+2025-03-03 09:53:35,386 - INFO - ✅ Data extracted: ABERNATHY ELEM
+2025-03-03 09:53:36,524 - INFO - 
+🏫 Processing school 15/15: https://txschools.gov/?view=school&id=014901102&lng=en&page=1
+2025-03-03 09:53:38,905 - INFO - School: ACADEMY EARLY CHILDHOOD CENTER
+2025-03-03 09:53:38,905 - INFO - Quality Score: 100
+2025-03-03 09:53:38,905 - INFO - Quality Issues: 
+2025-03-03 09:53:38,905 - INFO - ✅ Data extracted: ACADEMY EARLY CHILDHOOD CENTER
+2025-03-03 09:53:40,714 - INFO - 
+=== Data Quality Summary ===
+2025-03-03 09:53:40,714 - INFO - Total schools processed: 15
+2025-03-03 09:53:40,714 - INFO - Average quality score: 99.33%
+2025-03-03 09:53:40,714 - INFO - Schools with quality issues: 1
+2025-03-03 09:53:40,714 - INFO - Quality rate: 93.33%
+2025-03-03 09:53:40,714 - INFO - Data saved to: output/schools_data_pages_1_to_1.csv
+2025-03-03 09:53:40,715 - INFO - 📂 Data saved to schools_data_pages_1_to_1.csv
+2025-03-03 09:53:40,715 - INFO - 📊 Total schools processed: 15
+2025-03-03 09:55:20,006 - INFO - 🚀 Starting scraping process...
+2025-03-03 09:55:25,541 - INFO - 🔍 Starting link collection...
+2025-03-03 09:55:30,561 - INFO - 📃 Getting links from page 1
+2025-03-03 09:55:30,688 - INFO - ✅ Links found on page 1: 15
+2025-03-03 09:55:38,350 - INFO - 📃 Getting links from page 2
+2025-03-03 09:55:38,446 - INFO - ✅ Links found on page 2: 15
+2025-03-03 09:55:46,400 - INFO - 📃 Getting links from page 3
+2025-03-03 09:55:46,488 - INFO - ✅ Links found on page 3: 15
+2025-03-03 09:55:46,488 - INFO - 🏁 Maximum page limit reached
+2025-03-03 09:55:46,488 - INFO - 📊 Total links collected: 45
+2025-03-03 09:55:46,488 - INFO - 🔄 Starting link processing...
+2025-03-03 09:55:46,488 - INFO - 
+🏫 Processing school 1/45: https://txschools.gov/?view=school&id=108913118&lng=en&page=1
+2025-03-03 09:55:49,830 - INFO - School: 21ST CENTURY EARLY LEARNING FOUNDATIONS ACADEMY
+2025-03-03 09:55:49,830 - INFO - Quality Score: 100
+2025-03-03 09:55:49,830 - INFO - Quality Issues: 
+2025-03-03 09:55:49,830 - INFO - ✅ Data extracted: 21ST CENTURY EARLY LEARNING FOUNDATIONS ACADEMY
+2025-03-03 09:55:51,545 - INFO - 
+🏫 Processing school 2/45: https://txschools.gov/?view=school&id=077901101&lng=en&page=1
+2025-03-03 09:55:54,229 - INFO - School: A B DUNCAN COLLEGIATE ELEM
+2025-03-03 09:55:54,229 - INFO - Quality Score: 100
+2025-03-03 09:55:54,229 - INFO - Quality Issues: 
+2025-03-03 09:55:54,229 - INFO - ✅ Data extracted: A B DUNCAN COLLEGIATE ELEM
+2025-03-03 09:55:56,551 - INFO - 
+🏫 Processing school 3/45: https://txschools.gov/?view=school&id=147903103&lng=en&page=1
+2025-03-03 09:55:58,493 - INFO - School: A B MCBAY ELEM
+2025-03-03 09:55:58,494 - INFO - Quality Score: 100
+2025-03-03 09:55:58,494 - INFO - Quality Issues: 
+2025-03-03 09:55:58,494 - INFO - ✅ Data extracted: A B MCBAY ELEM
+2025-03-03 09:55:59,927 - INFO - 
+🏫 Processing school 4/45: https://txschools.gov/?view=school&id=126905103&lng=en&page=1
+2025-03-03 09:56:01,900 - INFO - School: A G ELDER ELEM
+2025-03-03 09:56:01,901 - INFO - Quality Score: 100
+2025-03-03 09:56:01,901 - INFO - Quality Issues: 
+2025-03-03 09:56:01,901 - INFO - ✅ Data extracted: A G ELDER ELEM
+2025-03-03 09:56:04,391 - INFO - 
+🏫 Processing school 5/45: https://txschools.gov/?view=school&id=108902104&lng=en&page=1
+2025-03-03 09:56:07,128 - INFO - School: A M OCHOA ELEM
+2025-03-03 09:56:07,128 - INFO - Quality Score: 100
+2025-03-03 09:56:07,128 - INFO - Quality Issues: 
+2025-03-03 09:56:07,128 - INFO - ✅ Data extracted: A M OCHOA ELEM
+2025-03-03 09:56:08,526 - INFO - 
+🏫 Processing school 6/45: https://txschools.gov/?view=school&id=220905153&lng=en&page=1
+2025-03-03 09:56:10,446 - INFO - School: A M PATE ELEM
+2025-03-03 09:56:10,446 - INFO - Quality Score: 100
+2025-03-03 09:56:10,446 - INFO - Quality Issues: 
+2025-03-03 09:56:10,446 - INFO - ✅ Data extracted: A M PATE ELEM
+2025-03-03 09:56:13,166 - INFO - 
+🏫 Processing school 7/45: https://txschools.gov/?view=school&id=108913113&lng=en&page=1
+2025-03-03 09:56:15,030 - INFO - School: A N RICO ELEM
+2025-03-03 09:56:15,030 - INFO - Quality Score: 100
+2025-03-03 09:56:15,030 - INFO - Quality Issues: 
+2025-03-03 09:56:15,030 - INFO - ✅ Data extracted: A N RICO ELEM
+2025-03-03 09:56:16,826 - INFO - 
+🏫 Processing school 8/45: https://txschools.gov/?view=school&id=020905102&lng=en&page=1
+2025-03-03 09:56:24,007 - INFO - School: A P BEUTEL ELEM
+2025-03-03 09:56:24,008 - INFO - Quality Score: 90
+2025-03-03 09:56:24,008 - INFO - Quality Issues: School Website not available
+2025-03-03 09:56:24,008 - INFO - ✅ Data extracted: A P BEUTEL ELEM
+2025-03-03 09:56:26,686 - INFO - 
+🏫 Processing school 9/45: https://txschools.gov/?view=school&id=220917101&lng=en&page=1
+2025-03-03 09:56:29,279 - INFO - School: A V CATO ELEM
+2025-03-03 09:56:29,279 - INFO - Quality Score: 100
+2025-03-03 09:56:29,279 - INFO - Quality Issues: 
+2025-03-03 09:56:29,279 - INFO - ✅ Data extracted: A V CATO ELEM
+2025-03-03 09:56:31,824 - INFO - 
+🏫 Processing school 10/45: https://txschools.gov/?view=school&id=057829001&lng=en&page=1
+2025-03-03 09:56:34,066 - INFO - School: A+ ACADEMY ELEM
+2025-03-03 09:56:34,066 - INFO - Quality Score: 100
+2025-03-03 09:56:34,066 - INFO - Quality Issues: 
+2025-03-03 09:56:34,067 - INFO - ✅ Data extracted: A+ ACADEMY ELEM
+2025-03-03 09:56:35,089 - INFO - 
+🏫 Processing school 11/45: https://txschools.gov/?view=school&id=139911102&lng=en&page=1
+2025-03-03 09:56:37,271 - INFO - School: AARON PARKER ELEM
+2025-03-03 09:56:37,271 - INFO - Quality Score: 100
+2025-03-03 09:56:37,271 - INFO - Quality Issues: 
+2025-03-03 09:56:37,271 - INFO - ✅ Data extracted: AARON PARKER ELEM
+2025-03-03 09:56:39,249 - INFO - 
+🏫 Processing school 12/45: https://txschools.gov/?view=school&id=057909143&lng=en&page=1
+2025-03-03 09:56:41,220 - INFO - School: ABBETT ELEM
+2025-03-03 09:56:41,221 - INFO - Quality Score: 100
+2025-03-03 09:56:41,221 - INFO - Quality Issues: 
+2025-03-03 09:56:41,221 - INFO - ✅ Data extracted: ABBETT ELEM
+2025-03-03 09:56:44,209 - INFO - 
+🏫 Processing school 13/45: https://txschools.gov/?view=school&id=109901001&lng=en&page=1
+2025-03-03 09:56:46,549 - INFO - School: ABBOTT SCHOOL
+2025-03-03 09:56:46,550 - INFO - Quality Score: 100
+2025-03-03 09:56:46,550 - INFO - Quality Issues: 
+2025-03-03 09:56:46,550 - INFO - ✅ Data extracted: ABBOTT SCHOOL
+2025-03-03 09:56:49,361 - INFO - 
+🏫 Processing school 14/45: https://txschools.gov/?view=school&id=095901101&lng=en&page=1
+2025-03-03 09:56:51,675 - INFO - School: ABERNATHY ELEM
+2025-03-03 09:56:51,675 - INFO - Quality Score: 100
+2025-03-03 09:56:51,675 - INFO - Quality Issues: 
+2025-03-03 09:56:51,675 - INFO - ✅ Data extracted: ABERNATHY ELEM
+2025-03-03 09:56:53,477 - INFO - 
+🏫 Processing school 15/45: https://txschools.gov/?view=school&id=014901102&lng=en&page=1
+2025-03-03 09:56:55,822 - INFO - School: ACADEMY EARLY CHILDHOOD CENTER
+2025-03-03 09:56:55,823 - INFO - Quality Score: 100
+2025-03-03 09:56:55,823 - INFO - Quality Issues: 
+2025-03-03 09:56:55,823 - INFO - ✅ Data extracted: ACADEMY EARLY CHILDHOOD CENTER
+2025-03-03 09:56:57,959 - INFO - 
+🏫 Processing school 16/45: https://txschools.gov/?view=school&id=220902116&lng=en&page=2
+2025-03-03 09:57:00,093 - INFO - School: ACADEMY AT CARRIE F THOMAS
+2025-03-03 09:57:00,093 - INFO - Quality Score: 100
+2025-03-03 09:57:00,093 - INFO - Quality Issues: 
+2025-03-03 09:57:00,093 - INFO - ✅ Data extracted: ACADEMY AT CARRIE F THOMAS
+2025-03-03 09:57:01,811 - INFO - 
+🏫 Processing school 17/45: https://txschools.gov/?view=school&id=126902101&lng=en&page=2
+2025-03-03 09:57:03,683 - INFO - School: ACADEMY AT NOLA DUNN
+2025-03-03 09:57:03,683 - INFO - Quality Score: 100
+2025-03-03 09:57:03,683 - INFO - Quality Issues: 
+2025-03-03 09:57:03,683 - INFO - ✅ Data extracted: ACADEMY AT NOLA DUNN
+2025-03-03 09:57:04,704 - INFO - 
+🏫 Processing school 18/45: https://txschools.gov/?view=school&id=057810101&lng=en&page=2
+2025-03-03 09:57:06,762 - INFO - School: ACADEMY OF DALLAS
+2025-03-03 09:57:06,762 - INFO - Quality Score: 100
+2025-03-03 09:57:06,762 - INFO - Quality Issues: 
+2025-03-03 09:57:06,762 - INFO - ✅ Data extracted: ACADEMY OF DALLAS
+2025-03-03 09:57:07,872 - INFO - 
+🏫 Processing school 19/45: https://txschools.gov/?view=school&id=101849101&lng=en&page=2
+2025-03-03 09:57:10,673 - INFO - School: ACCELERATED INTERDISCIPLINARY ACAD
+2025-03-03 09:57:10,673 - INFO - Quality Score: 100
+2025-03-03 09:57:10,673 - INFO - Quality Issues: 
+2025-03-03 09:57:10,673 - INFO - ✅ Data extracted: ACCELERATED INTERDISCIPLINARY ACAD
+2025-03-03 09:57:12,867 - INFO - 
+🏫 Processing school 20/45: https://txschools.gov/?view=school&id=057914132&lng=en&page=2
+2025-03-03 09:57:15,130 - INFO - School: ACHZIGER ELEM
+2025-03-03 09:57:15,130 - INFO - Quality Score: 100
+2025-03-03 09:57:15,130 - INFO - Quality Issues: 
+2025-03-03 09:57:15,131 - INFO - ✅ Data extracted: ACHZIGER ELEM
+2025-03-03 09:57:17,648 - INFO - 
+🏫 Processing school 21/45: https://txschools.gov/?view=school&id=111901102&lng=en&page=2
+2025-03-03 09:57:19,756 - INFO - School: ACTON ELEM
+2025-03-03 09:57:19,757 - INFO - Quality Score: 100
+2025-03-03 09:57:19,757 - INFO - Quality Issues: 
+2025-03-03 09:57:19,757 - INFO - ✅ Data extracted: ACTON ELEM
+2025-03-03 09:57:21,319 - INFO - 
+🏫 Processing school 22/45: https://txschools.gov/?view=school&id=246913102&lng=en&page=2
+2025-03-03 09:57:28,232 - INFO - School: ADA MAE FAUBION ELEM
+2025-03-03 09:57:28,232 - INFO - Quality Score: 90
+2025-03-03 09:57:28,232 - INFO - Quality Issues: School Website not available
+2025-03-03 09:57:28,232 - INFO - ✅ Data extracted: ADA MAE FAUBION ELEM
+2025-03-03 09:57:29,252 - INFO - 
+🏫 Processing school 23/45: https://txschools.gov/?view=school&id=101907107&lng=en&page=2
+2025-03-03 09:57:31,359 - INFO - School: ADAM ELEM
+2025-03-03 09:57:31,359 - INFO - Quality Score: 100
+2025-03-03 09:57:31,359 - INFO - Quality Issues: 
+2025-03-03 09:57:31,359 - INFO - ✅ Data extracted: ADAM ELEM
+2025-03-03 09:57:33,730 - INFO - 
+🏫 Processing school 24/45: https://txschools.gov/?view=school&id=126903101&lng=en&page=2
+2025-03-03 09:57:36,431 - INFO - School: ADAMS ELEM
+2025-03-03 09:57:36,431 - INFO - Quality Score: 100
+2025-03-03 09:57:36,431 - INFO - Quality Issues: 
+2025-03-03 09:57:36,431 - INFO - ✅ Data extracted: ADAMS ELEM
+2025-03-03 09:57:38,932 - INFO - 
+🏫 Processing school 25/45: https://txschools.gov/?view=school&id=220901161&lng=en&page=2
+2025-03-03 09:57:41,430 - INFO - School: ADAMS ELEM
+2025-03-03 09:57:41,430 - INFO - Quality Score: 100
+2025-03-03 09:57:41,430 - INFO - Quality Issues: 
+2025-03-03 09:57:41,430 - INFO - ✅ Data extracted: ADAMS ELEM
+2025-03-03 09:57:44,405 - INFO - 
+🏫 Processing school 26/45: https://txschools.gov/?view=school&id=015915123&lng=en&page=2
+2025-03-03 09:57:46,716 - INFO - School: ADAMS HILL ELEM
+2025-03-03 09:57:46,716 - INFO - Quality Score: 100
+2025-03-03 09:57:46,716 - INFO - Quality Issues: 
+2025-03-03 09:57:46,716 - INFO - ✅ Data extracted: ADAMS HILL ELEM
+2025-03-03 09:57:48,559 - INFO - 
+🏫 Processing school 27/45: https://txschools.gov/?view=school&id=057905247&lng=en&page=2
+2025-03-03 09:57:50,372 - INFO - School: ADELFA BOTELLO CALLEJO ELEM
+2025-03-03 09:57:50,373 - INFO - Quality Score: 100
+2025-03-03 09:57:50,373 - INFO - Quality Issues: 
+2025-03-03 09:57:50,373 - INFO - ✅ Data extracted: ADELFA BOTELLO CALLEJO ELEM
+2025-03-03 09:57:51,828 - INFO - 
+🏫 Processing school 28/45: https://txschools.gov/?view=school&id=057905219&lng=en&page=2
+2025-03-03 09:57:53,602 - INFO - School: ADELLE TURNER ELEM
+2025-03-03 09:57:53,602 - INFO - Quality Score: 100
+2025-03-03 09:57:53,602 - INFO - Quality Issues: 
+2025-03-03 09:57:53,602 - INFO - ✅ Data extracted: ADELLE TURNER ELEM
+2025-03-03 09:57:56,412 - INFO - 
+🏫 Processing school 29/45: https://txschools.gov/?view=school&id=180903001&lng=en&page=2
+2025-03-03 09:57:59,070 - INFO - School: ADRIAN SCHOOL
+2025-03-03 09:57:59,070 - INFO - Quality Score: 100
+2025-03-03 09:57:59,070 - INFO - Quality Issues: 
+2025-03-03 09:57:59,070 - INFO - ✅ Data extracted: ADRIAN SCHOOL
+2025-03-03 09:58:00,722 - INFO - 
+🏫 Processing school 30/45: https://txschools.gov/?view=school&id=015907026&lng=en&page=2
+2025-03-03 09:58:03,591 - INFO - School: ADVANCED LEARNING ACADEMY
+2025-03-03 09:58:03,592 - INFO - Quality Score: 100
+2025-03-03 09:58:03,592 - INFO - Quality Issues: 
+2025-03-03 09:58:03,593 - INFO - ✅ Data extracted: ADVANCED LEARNING ACADEMY
+2025-03-03 09:58:05,859 - INFO - 
+🏫 Processing school 31/45: https://txschools.gov/?view=school&id=057806101&lng=en&page=3
+2025-03-03 09:58:08,051 - INFO - School: ADVANTAGE ACADEMY
+2025-03-03 09:58:08,051 - INFO - Quality Score: 100
+2025-03-03 09:58:08,051 - INFO - Quality Issues: 
+2025-03-03 09:58:08,051 - INFO - ✅ Data extracted: ADVANTAGE ACADEMY
+2025-03-03 09:58:10,593 - INFO - 
+🏫 Processing school 32/45: https://txschools.gov/?view=school&id=015907117&lng=en&page=3
+2025-03-03 09:58:13,110 - INFO - School: AGNES COTTON ACADEMY
+2025-03-03 09:58:13,110 - INFO - Quality Score: 100
+2025-03-03 09:58:13,110 - INFO - Quality Issues: 
+2025-03-03 09:58:13,110 - INFO - ✅ Data extracted: AGNES COTTON ACADEMY
+2025-03-03 09:58:15,502 - INFO - 
+🏫 Processing school 33/45: https://txschools.gov/?view=school&id=178901101&lng=en&page=3
+2025-03-03 09:58:17,379 - INFO - School: AGUA DULCE ELEM
+2025-03-03 09:58:17,379 - INFO - Quality Score: 100
+2025-03-03 09:58:17,379 - INFO - Quality Issues: 
+2025-03-03 09:58:17,379 - INFO - ✅ Data extracted: AGUA DULCE ELEM
+2025-03-03 09:58:19,552 - INFO - 
+🏫 Processing school 34/45: https://txschools.gov/?view=school&id=108909113&lng=en&page=3
+2025-03-03 09:58:21,573 - INFO - School: AIDA C ESCOBAR ELEM
+2025-03-03 09:58:21,573 - INFO - Quality Score: 100
+2025-03-03 09:58:21,573 - INFO - Quality Issues: 
+2025-03-03 09:58:21,573 - INFO - ✅ Data extracted: AIDA C ESCOBAR ELEM
+2025-03-03 09:58:24,064 - INFO - 
+🏫 Processing school 35/45: https://txschools.gov/?view=school&id=031901133&lng=en&page=3
+2025-03-03 09:58:26,032 - INFO - School: AIKEN ELEM
+2025-03-03 09:58:26,032 - INFO - Quality Score: 100
+2025-03-03 09:58:26,032 - INFO - Quality Issues: 
+2025-03-03 09:58:26,032 - INFO - ✅ Data extracted: AIKEN ELEM
+2025-03-03 09:58:29,022 - INFO - 
+🏫 Processing school 36/45: https://txschools.gov/?view=school&id=057916135&lng=en&page=3
+2025-03-03 09:58:31,058 - INFO - School: AIKIN ELEM
+2025-03-03 09:58:31,059 - INFO - Quality Score: 100
+2025-03-03 09:58:31,059 - INFO - Quality Issues: 
+2025-03-03 09:58:31,059 - INFO - ✅ Data extracted: AIKIN ELEM
+2025-03-03 09:58:32,431 - INFO - 
+🏫 Processing school 37/45: https://txschools.gov/?view=school&id=139909109&lng=en&page=3
+2025-03-03 09:58:34,592 - INFO - School: AIKIN ELEM
+2025-03-03 09:58:34,592 - INFO - Quality Score: 100
+2025-03-03 09:58:34,592 - INFO - Quality Issues: 
+2025-03-03 09:58:34,592 - INFO - ✅ Data extracted: AIKIN ELEM
+2025-03-03 09:58:35,597 - INFO - 
+🏫 Processing school 38/45: https://txschools.gov/?view=school&id=059901101&lng=en&page=3
+2025-03-03 09:58:37,309 - INFO - School: AIKMAN ELEM
+2025-03-03 09:58:37,309 - INFO - Quality Score: 100
+2025-03-03 09:58:37,309 - INFO - Quality Issues: 
+2025-03-03 09:58:37,309 - INFO - ✅ Data extracted: AIKMAN ELEM
+2025-03-03 09:58:39,280 - INFO - 
+🏫 Processing school 39/45: https://txschools.gov/?view=school&id=108913110&lng=en&page=3
+2025-03-03 09:58:41,560 - INFO - School: AIRPORT ELEM
+2025-03-03 09:58:41,560 - INFO - Quality Score: 100
+2025-03-03 09:58:41,560 - INFO - Quality Issues: 
+2025-03-03 09:58:41,560 - INFO - ✅ Data extracted: AIRPORT ELEM
+2025-03-03 09:58:44,262 - INFO - 
+🏫 Processing school 40/45: https://txschools.gov/?view=school&id=095903102&lng=en&page=3
+2025-03-03 09:58:46,678 - INFO - School: AKIN ELEM
+2025-03-03 09:58:46,678 - INFO - Quality Score: 100
+2025-03-03 09:58:46,678 - INFO - Quality Issues: 
+2025-03-03 09:58:46,680 - INFO - ✅ Data extracted: AKIN ELEM
+2025-03-03 09:58:48,604 - INFO - 
+🏫 Processing school 41/45: https://txschools.gov/?view=school&id=101911101&lng=en&page=3
+2025-03-03 09:58:55,798 - INFO - School: ALAMO ELEM
+2025-03-03 09:58:55,799 - INFO - Quality Score: 90
+2025-03-03 09:58:55,799 - INFO - Quality Issues: School Website not available
+2025-03-03 09:58:55,799 - INFO - ✅ Data extracted: ALAMO ELEM
+2025-03-03 09:58:57,368 - INFO - 
+🏫 Processing school 42/45: https://txschools.gov/?view=school&id=250906101&lng=en&page=3
+2025-03-03 09:58:59,930 - INFO - School: ALBA-GOLDEN ELEM
+2025-03-03 09:58:59,930 - INFO - Quality Score: 100
+2025-03-03 09:58:59,930 - INFO - Quality Issues: 
+2025-03-03 09:58:59,930 - INFO - ✅ Data extracted: ALBA-GOLDEN ELEM
+2025-03-03 09:59:01,953 - INFO - 
+🏫 Processing school 43/45: https://txschools.gov/?view=school&id=043907118&lng=en&page=3
+2025-03-03 09:59:09,249 - INFO - School: ALBERT & IOLA LEE DAVIS MALVERN ELEM
+2025-03-03 09:59:09,249 - INFO - Quality Score: 90
+2025-03-03 09:59:09,249 - INFO - Quality Issues: School Website not available
+2025-03-03 09:59:09,249 - INFO - ✅ Data extracted: ALBERT & IOLA LEE DAVIS MALVERN ELEM
+2025-03-03 09:59:12,115 - INFO - 
+🏫 Processing school 44/45: https://txschools.gov/?view=school&id=214901104&lng=en&page=3
+2025-03-03 09:59:14,552 - INFO - School: ALBERTO AND CELIA BARRERA ELEM
+2025-03-03 09:59:14,552 - INFO - Quality Score: 100
+2025-03-03 09:59:14,552 - INFO - Quality Issues: 
+2025-03-03 09:59:14,552 - INFO - ✅ Data extracted: ALBERTO AND CELIA BARRERA ELEM
+2025-03-03 09:59:16,587 - INFO - 
+🏫 Processing school 45/45: https://txschools.gov/?view=school&id=221901112&lng=en&page=3
+2025-03-03 09:59:19,308 - INFO - School: ALCORTA ELEM
+2025-03-03 09:59:19,308 - INFO - Quality Score: 100
+2025-03-03 09:59:19,308 - INFO - Quality Issues: 
+2025-03-03 09:59:19,308 - INFO - ✅ Data extracted: ALCORTA ELEM
+2025-03-03 09:59:22,262 - INFO - 
+=== Data Quality Summary ===
+2025-03-03 09:59:22,262 - INFO - Total schools processed: 45
+2025-03-03 09:59:22,262 - INFO - Average quality score: 99.11%
+2025-03-03 09:59:22,262 - INFO - Schools with quality issues: 4
+2025-03-03 09:59:22,262 - INFO - Quality rate: 91.11%
+2025-03-03 09:59:22,262 - INFO - Data saved to: output/schools_data_pages_1_to_3.csv
+2025-03-03 09:59:22,262 - INFO - 📂 Data saved to schools_data_pages_1_to_3.csv
+2025-03-03 09:59:22,262 - INFO - 📊 Total schools processed: 45
+2025-03-03 10:00:18,641 - INFO - 🚀 Starting scraping process...
+2025-03-03 10:00:23,890 - INFO - 🔍 Starting link collection...
+2025-03-03 10:00:28,738 - INFO - 📃 Getting links from page 1
+2025-03-03 10:00:28,855 - INFO - ✅ Links found on page 1: 15
+2025-03-03 10:00:35,938 - INFO - 📃 Getting links from page 2
+2025-03-03 10:00:36,032 - INFO - ✅ Links found on page 2: 15
+2025-03-03 10:00:43,239 - INFO - 📃 Getting links from page 3
+2025-03-03 10:00:43,330 - INFO - ✅ Links found on page 3: 15
+2025-03-03 10:00:50,720 - INFO - 📃 Getting links from page 4
+2025-03-03 10:00:50,809 - INFO - ✅ Links found on page 4: 15
+2025-03-03 10:00:58,810 - INFO - 📃 Getting links from page 5
+2025-03-03 10:00:58,899 - INFO - ✅ Links found on page 5: 15
+2025-03-03 10:01:06,794 - INFO - 📃 Getting links from page 6
+2025-03-03 10:01:06,886 - INFO - ✅ Links found on page 6: 15
+2025-03-03 10:01:14,159 - INFO - 📃 Getting links from page 7
+2025-03-03 10:01:14,292 - INFO - ✅ Links found on page 7: 15
+2025-03-03 10:01:14,292 - INFO - 🏁 Maximum page limit reached
+2025-03-03 10:01:14,292 - INFO - 📊 Total links collected: 105
+2025-03-03 10:01:14,292 - INFO - 🔄 Starting link processing...
+2025-03-03 10:01:14,292 - INFO - 
+🏫 Processing school 1/105: https://txschools.gov/?view=school&id=108913118&lng=en&page=1
+2025-03-03 10:01:17,289 - INFO - School: 21ST CENTURY EARLY LEARNING FOUNDATIONS ACADEMY
+2025-03-03 10:01:17,289 - INFO - Quality Score: 100
+2025-03-03 10:01:17,289 - INFO - Quality Issues: 
+2025-03-03 10:01:17,289 - INFO - ✅ Data extracted: 21ST CENTURY EARLY LEARNING FOUNDATIONS ACADEMY
+2025-03-03 10:01:19,587 - INFO - 
+🏫 Processing school 2/105: https://txschools.gov/?view=school&id=077901101&lng=en&page=1
+2025-03-03 10:01:21,704 - INFO - School: A B DUNCAN COLLEGIATE ELEM
+2025-03-03 10:01:21,705 - INFO - Quality Score: 100
+2025-03-03 10:01:21,705 - INFO - Quality Issues: 
+2025-03-03 10:01:21,705 - INFO - ✅ Data extracted: A B DUNCAN COLLEGIATE ELEM
+2025-03-03 10:01:23,841 - INFO - 
+🏫 Processing school 3/105: https://txschools.gov/?view=school&id=147903103&lng=en&page=1
+2025-03-03 10:01:25,801 - INFO - School: A B MCBAY ELEM
+2025-03-03 10:01:25,801 - INFO - Quality Score: 100
+2025-03-03 10:01:25,801 - INFO - Quality Issues: 
+2025-03-03 10:01:25,801 - INFO - ✅ Data extracted: A B MCBAY ELEM
+2025-03-03 10:01:26,896 - INFO - 
+🏫 Processing school 4/105: https://txschools.gov/?view=school&id=126905103&lng=en&page=1
+2025-03-03 10:01:29,716 - INFO - School: A G ELDER ELEM
+2025-03-03 10:01:29,717 - INFO - Quality Score: 100
+2025-03-03 10:01:29,717 - INFO - Quality Issues: 
+2025-03-03 10:01:29,717 - INFO - ✅ Data extracted: A G ELDER ELEM
+2025-03-03 10:01:32,421 - INFO - 
+🏫 Processing school 5/105: https://txschools.gov/?view=school&id=108902104&lng=en&page=1
+2025-03-03 10:01:35,338 - INFO - School: A M OCHOA ELEM
+2025-03-03 10:01:35,338 - INFO - Quality Score: 100
+2025-03-03 10:01:35,338 - INFO - Quality Issues: 
+2025-03-03 10:01:35,338 - INFO - ✅ Data extracted: A M OCHOA ELEM
+2025-03-03 10:01:36,976 - INFO - 
+🏫 Processing school 6/105: https://txschools.gov/?view=school&id=220905153&lng=en&page=1
+2025-03-03 10:01:38,859 - INFO - School: A M PATE ELEM
+2025-03-03 10:01:38,859 - INFO - Quality Score: 100
+2025-03-03 10:01:38,859 - INFO - Quality Issues: 
+2025-03-03 10:01:38,860 - INFO - ✅ Data extracted: A M PATE ELEM
+2025-03-03 10:01:41,263 - INFO - 
+🏫 Processing school 7/105: https://txschools.gov/?view=school&id=108913113&lng=en&page=1
+2025-03-03 10:01:43,204 - INFO - School: A N RICO ELEM
+2025-03-03 10:01:43,204 - INFO - Quality Score: 100
+2025-03-03 10:01:43,204 - INFO - Quality Issues: 
+2025-03-03 10:01:43,204 - INFO - ✅ Data extracted: A N RICO ELEM
+2025-03-03 10:01:44,334 - INFO - 
+🏫 Processing school 8/105: https://txschools.gov/?view=school&id=020905102&lng=en&page=1
+2025-03-03 10:01:51,568 - INFO - School: A P BEUTEL ELEM
+2025-03-03 10:01:51,569 - INFO - Quality Score: 90
+2025-03-03 10:01:51,569 - INFO - Quality Issues: School Website not available
+2025-03-03 10:01:51,569 - INFO - ✅ Data extracted: A P BEUTEL ELEM
+2025-03-03 10:01:53,043 - INFO - 
+🏫 Processing school 9/105: https://txschools.gov/?view=school&id=220917101&lng=en&page=1
+2025-03-03 10:01:55,742 - INFO - School: A V CATO ELEM
+2025-03-03 10:01:55,743 - INFO - Quality Score: 100
+2025-03-03 10:01:55,743 - INFO - Quality Issues: 
+2025-03-03 10:01:55,743 - INFO - ✅ Data extracted: A V CATO ELEM
+2025-03-03 10:01:58,374 - INFO - 
+🏫 Processing school 10/105: https://txschools.gov/?view=school&id=057829001&lng=en&page=1
+2025-03-03 10:02:01,127 - INFO - School: A+ ACADEMY ELEM
+2025-03-03 10:02:01,127 - INFO - Quality Score: 100
+2025-03-03 10:02:01,127 - INFO - Quality Issues: 
+2025-03-03 10:02:01,128 - INFO - ✅ Data extracted: A+ ACADEMY ELEM
+2025-03-03 10:02:02,396 - INFO - 
+🏫 Processing school 11/105: https://txschools.gov/?view=school&id=139911102&lng=en&page=1
+2025-03-03 10:02:05,042 - INFO - School: AARON PARKER ELEM
+2025-03-03 10:02:05,043 - INFO - Quality Score: 100
+2025-03-03 10:02:05,043 - INFO - Quality Issues: 
+2025-03-03 10:02:05,043 - INFO - ✅ Data extracted: AARON PARKER ELEM
+2025-03-03 10:02:06,687 - INFO - 
+🏫 Processing school 12/105: https://txschools.gov/?view=school&id=057909143&lng=en&page=1
+2025-03-03 10:02:09,027 - INFO - School: ABBETT ELEM
+2025-03-03 10:02:09,027 - INFO - Quality Score: 100
+2025-03-03 10:02:09,027 - INFO - Quality Issues: 
+2025-03-03 10:02:09,027 - INFO - ✅ Data extracted: ABBETT ELEM
+2025-03-03 10:02:10,237 - INFO - 
+🏫 Processing school 13/105: https://txschools.gov/?view=school&id=109901001&lng=en&page=1
+2025-03-03 10:02:12,640 - INFO - School: ABBOTT SCHOOL
+2025-03-03 10:02:12,640 - INFO - Quality Score: 100
+2025-03-03 10:02:12,640 - INFO - Quality Issues: 
+2025-03-03 10:02:12,640 - INFO - ✅ Data extracted: ABBOTT SCHOOL
+2025-03-03 10:02:14,666 - INFO - 
+🏫 Processing school 14/105: https://txschools.gov/?view=school&id=095901101&lng=en&page=1
+2025-03-03 10:02:17,340 - INFO - School: ABERNATHY ELEM
+2025-03-03 10:02:17,340 - INFO - Quality Score: 100
+2025-03-03 10:02:17,340 - INFO - Quality Issues: 
+2025-03-03 10:02:17,340 - INFO - ✅ Data extracted: ABERNATHY ELEM
+2025-03-03 10:02:19,000 - INFO - 
+🏫 Processing school 15/105: https://txschools.gov/?view=school&id=014901102&lng=en&page=1
+2025-03-03 10:02:20,905 - INFO - School: ACADEMY EARLY CHILDHOOD CENTER
+2025-03-03 10:02:20,905 - INFO - Quality Score: 100
+2025-03-03 10:02:20,905 - INFO - Quality Issues: 
+2025-03-03 10:02:20,905 - INFO - ✅ Data extracted: ACADEMY EARLY CHILDHOOD CENTER
+2025-03-03 10:02:23,655 - INFO - 
+🏫 Processing school 16/105: https://txschools.gov/?view=school&id=220902116&lng=en&page=2
+2025-03-03 10:02:25,464 - INFO - School: ACADEMY AT CARRIE F THOMAS
+2025-03-03 10:02:25,465 - INFO - Quality Score: 100
+2025-03-03 10:02:25,465 - INFO - Quality Issues: 
+2025-03-03 10:02:25,465 - INFO - ✅ Data extracted: ACADEMY AT CARRIE F THOMAS
+2025-03-03 10:02:27,024 - INFO - 
+🏫 Processing school 17/105: https://txschools.gov/?view=school&id=126902101&lng=en&page=2
+2025-03-03 10:02:29,213 - INFO - School: ACADEMY AT NOLA DUNN
+2025-03-03 10:02:29,213 - INFO - Quality Score: 100
+2025-03-03 10:02:29,213 - INFO - Quality Issues: 
+2025-03-03 10:02:29,213 - INFO - ✅ Data extracted: ACADEMY AT NOLA DUNN
+2025-03-03 10:02:31,154 - INFO - 
+🏫 Processing school 18/105: https://txschools.gov/?view=school&id=057810101&lng=en&page=2
+2025-03-03 10:02:33,525 - INFO - School: ACADEMY OF DALLAS
+2025-03-03 10:02:33,525 - INFO - Quality Score: 100
+2025-03-03 10:02:33,525 - INFO - Quality Issues: 
+2025-03-03 10:02:33,525 - INFO - ✅ Data extracted: ACADEMY OF DALLAS
+2025-03-03 10:02:35,401 - INFO - 
+🏫 Processing school 19/105: https://txschools.gov/?view=school&id=101849101&lng=en&page=2
+2025-03-03 10:02:37,954 - INFO - School: ACCELERATED INTERDISCIPLINARY ACAD
+2025-03-03 10:02:37,955 - INFO - Quality Score: 100
+2025-03-03 10:02:37,955 - INFO - Quality Issues: 
+2025-03-03 10:02:37,955 - INFO - ✅ Data extracted: ACCELERATED INTERDISCIPLINARY ACAD
+2025-03-03 10:02:39,884 - INFO - 
+🏫 Processing school 20/105: https://txschools.gov/?view=school&id=057914132&lng=en&page=2
+2025-03-03 10:02:42,571 - INFO - School: ACHZIGER ELEM
+2025-03-03 10:02:42,572 - INFO - Quality Score: 100
+2025-03-03 10:02:42,572 - INFO - Quality Issues: 
+2025-03-03 10:02:42,573 - INFO - ✅ Data extracted: ACHZIGER ELEM
+2025-03-03 10:02:44,379 - INFO - 
+🏫 Processing school 21/105: https://txschools.gov/?view=school&id=111901102&lng=en&page=2
+2025-03-03 10:02:46,699 - INFO - School: ACTON ELEM
+2025-03-03 10:02:46,699 - INFO - Quality Score: 100
+2025-03-03 10:02:46,699 - INFO - Quality Issues: 
+2025-03-03 10:02:46,699 - INFO - ✅ Data extracted: ACTON ELEM
+2025-03-03 10:02:48,655 - INFO - 
+🏫 Processing school 22/105: https://txschools.gov/?view=school&id=246913102&lng=en&page=2
+2025-03-03 10:02:55,932 - INFO - School: ADA MAE FAUBION ELEM
+2025-03-03 10:02:55,934 - INFO - Quality Score: 90
+2025-03-03 10:02:55,934 - INFO - Quality Issues: School Website not available
+2025-03-03 10:02:55,934 - INFO - ✅ Data extracted: ADA MAE FAUBION ELEM
+2025-03-03 10:02:58,320 - INFO - 
+🏫 Processing school 23/105: https://txschools.gov/?view=school&id=101907107&lng=en&page=2
+2025-03-03 10:03:00,889 - INFO - School: ADAM ELEM
+2025-03-03 10:03:00,889 - INFO - Quality Score: 100
+2025-03-03 10:03:00,889 - INFO - Quality Issues: 
+2025-03-03 10:03:00,889 - INFO - ✅ Data extracted: ADAM ELEM
+2025-03-03 10:03:03,237 - INFO - 
+🏫 Processing school 24/105: https://txschools.gov/?view=school&id=126903101&lng=en&page=2
+2025-03-03 10:03:05,957 - INFO - School: ADAMS ELEM
+2025-03-03 10:03:05,957 - INFO - Quality Score: 100
+2025-03-03 10:03:05,957 - INFO - Quality Issues: 
+2025-03-03 10:03:05,957 - INFO - ✅ Data extracted: ADAMS ELEM
+2025-03-03 10:03:07,743 - INFO - 
+🏫 Processing school 25/105: https://txschools.gov/?view=school&id=220901161&lng=en&page=2
+2025-03-03 10:03:10,158 - INFO - School: ADAMS ELEM
+2025-03-03 10:03:10,158 - INFO - Quality Score: 100
+2025-03-03 10:03:10,158 - INFO - Quality Issues: 
+2025-03-03 10:03:10,158 - INFO - ✅ Data extracted: ADAMS ELEM
+2025-03-03 10:03:12,803 - INFO - 
+🏫 Processing school 26/105: https://txschools.gov/?view=school&id=015915123&lng=en&page=2
+2025-03-03 10:03:14,607 - INFO - School: ADAMS HILL ELEM
+2025-03-03 10:03:14,607 - INFO - Quality Score: 100
+2025-03-03 10:03:14,607 - INFO - Quality Issues: 
+2025-03-03 10:03:14,607 - INFO - ✅ Data extracted: ADAMS HILL ELEM
+2025-03-03 10:03:17,430 - INFO - 
+🏫 Processing school 27/105: https://txschools.gov/?view=school&id=057905247&lng=en&page=2
+2025-03-03 10:03:20,157 - INFO - School: ADELFA BOTELLO CALLEJO ELEM
+2025-03-03 10:03:20,157 - INFO - Quality Score: 100
+2025-03-03 10:03:20,157 - INFO - Quality Issues: 
+2025-03-03 10:03:20,157 - INFO - ✅ Data extracted: ADELFA BOTELLO CALLEJO ELEM
+2025-03-03 10:03:22,813 - INFO - 
+🏫 Processing school 28/105: https://txschools.gov/?view=school&id=057905219&lng=en&page=2
+2025-03-03 10:03:25,573 - INFO - School: ADELLE TURNER ELEM
+2025-03-03 10:03:25,573 - INFO - Quality Score: 100
+2025-03-03 10:03:25,573 - INFO - Quality Issues: 
+2025-03-03 10:03:25,573 - INFO - ✅ Data extracted: ADELLE TURNER ELEM
+2025-03-03 10:03:27,383 - INFO - 
+🏫 Processing school 29/105: https://txschools.gov/?view=school&id=180903001&lng=en&page=2
+2025-03-03 10:03:29,246 - INFO - School: ADRIAN SCHOOL
+2025-03-03 10:03:29,246 - INFO - Quality Score: 100
+2025-03-03 10:03:29,246 - INFO - Quality Issues: 
+2025-03-03 10:03:29,246 - INFO - ✅ Data extracted: ADRIAN SCHOOL
+2025-03-03 10:03:30,953 - INFO - 
+🏫 Processing school 30/105: https://txschools.gov/?view=school&id=015907026&lng=en&page=2
+2025-03-03 10:03:32,944 - INFO - School: ADVANCED LEARNING ACADEMY
+2025-03-03 10:03:32,944 - INFO - Quality Score: 100
+2025-03-03 10:03:32,944 - INFO - Quality Issues: 
+2025-03-03 10:03:32,945 - INFO - ✅ Data extracted: ADVANCED LEARNING ACADEMY
+2025-03-03 10:03:35,301 - INFO - 
+🏫 Processing school 31/105: https://txschools.gov/?view=school&id=057806101&lng=en&page=3
+2025-03-03 10:03:37,585 - INFO - School: ADVANTAGE ACADEMY
+2025-03-03 10:03:37,588 - INFO - Quality Score: 100
+2025-03-03 10:03:37,588 - INFO - Quality Issues: 
+2025-03-03 10:03:37,588 - INFO - ✅ Data extracted: ADVANTAGE ACADEMY
+2025-03-03 10:03:40,354 - INFO - 
+🏫 Processing school 32/105: https://txschools.gov/?view=school&id=015907117&lng=en&page=3
+2025-03-03 10:03:43,263 - INFO - School: AGNES COTTON ACADEMY
+2025-03-03 10:03:43,263 - INFO - Quality Score: 100
+2025-03-03 10:03:43,263 - INFO - Quality Issues: 
+2025-03-03 10:03:43,263 - INFO - ✅ Data extracted: AGNES COTTON ACADEMY
+2025-03-03 10:03:44,645 - INFO - 
+🏫 Processing school 33/105: https://txschools.gov/?view=school&id=178901101&lng=en&page=3
+2025-03-03 10:03:46,225 - INFO - School: AGUA DULCE ELEM
+2025-03-03 10:03:46,225 - INFO - Quality Score: 100
+2025-03-03 10:03:46,225 - INFO - Quality Issues: 
+2025-03-03 10:03:46,225 - INFO - ✅ Data extracted: AGUA DULCE ELEM
+2025-03-03 10:03:47,686 - INFO - 
+🏫 Processing school 34/105: https://txschools.gov/?view=school&id=108909113&lng=en&page=3
+2025-03-03 10:03:49,796 - INFO - School: AIDA C ESCOBAR ELEM
+2025-03-03 10:03:49,796 - INFO - Quality Score: 100
+2025-03-03 10:03:49,796 - INFO - Quality Issues: 
+2025-03-03 10:03:49,796 - INFO - ✅ Data extracted: AIDA C ESCOBAR ELEM
+2025-03-03 10:03:52,228 - INFO - 
+🏫 Processing school 35/105: https://txschools.gov/?view=school&id=031901133&lng=en&page=3
+2025-03-03 10:03:54,527 - INFO - School: AIKEN ELEM
+2025-03-03 10:03:54,527 - INFO - Quality Score: 100
+2025-03-03 10:03:54,527 - INFO - Quality Issues: 
+2025-03-03 10:03:54,527 - INFO - ✅ Data extracted: AIKEN ELEM
+2025-03-03 10:03:57,159 - INFO - 
+🏫 Processing school 36/105: https://txschools.gov/?view=school&id=057916135&lng=en&page=3
+2025-03-03 10:03:59,368 - INFO - School: AIKIN ELEM
+2025-03-03 10:03:59,368 - INFO - Quality Score: 100
+2025-03-03 10:03:59,368 - INFO - Quality Issues: 
+2025-03-03 10:03:59,368 - INFO - ✅ Data extracted: AIKIN ELEM
+2025-03-03 10:04:01,256 - INFO - 
+🏫 Processing school 37/105: https://txschools.gov/?view=school&id=139909109&lng=en&page=3
+2025-03-03 10:04:03,500 - INFO - School: AIKIN ELEM
+2025-03-03 10:04:03,500 - INFO - Quality Score: 100
+2025-03-03 10:04:03,500 - INFO - Quality Issues: 
+2025-03-03 10:04:03,500 - INFO - ✅ Data extracted: AIKIN ELEM
+2025-03-03 10:04:05,815 - INFO - 
+🏫 Processing school 38/105: https://txschools.gov/?view=school&id=059901101&lng=en&page=3
+2025-03-03 10:04:08,357 - INFO - School: AIKMAN ELEM
+2025-03-03 10:04:08,358 - INFO - Quality Score: 100
+2025-03-03 10:04:08,358 - INFO - Quality Issues: 
+2025-03-03 10:04:08,358 - INFO - ✅ Data extracted: AIKMAN ELEM
+2025-03-03 10:04:09,574 - INFO - 
+🏫 Processing school 39/105: https://txschools.gov/?view=school&id=108913110&lng=en&page=3
+2025-03-03 10:04:12,112 - INFO - School: AIRPORT ELEM
+2025-03-03 10:04:12,112 - INFO - Quality Score: 100
+2025-03-03 10:04:12,112 - INFO - Quality Issues: 
+2025-03-03 10:04:12,112 - INFO - ✅ Data extracted: AIRPORT ELEM
+2025-03-03 10:04:13,653 - INFO - 
+🏫 Processing school 40/105: https://txschools.gov/?view=school&id=095903102&lng=en&page=3
+2025-03-03 10:04:16,410 - INFO - School: AKIN ELEM
+2025-03-03 10:04:16,411 - INFO - Quality Score: 100
+2025-03-03 10:04:16,411 - INFO - Quality Issues: 
+2025-03-03 10:04:16,412 - INFO - ✅ Data extracted: AKIN ELEM
+2025-03-03 10:04:18,281 - INFO - 
+🏫 Processing school 41/105: https://txschools.gov/?view=school&id=101911101&lng=en&page=3
+2025-03-03 10:04:25,292 - INFO - School: ALAMO ELEM
+2025-03-03 10:04:25,292 - INFO - Quality Score: 90
+2025-03-03 10:04:25,292 - INFO - Quality Issues: School Website not available
+2025-03-03 10:04:25,292 - INFO - ✅ Data extracted: ALAMO ELEM
+2025-03-03 10:04:27,938 - INFO - 
+🏫 Processing school 42/105: https://txschools.gov/?view=school&id=250906101&lng=en&page=3
+2025-03-03 10:04:30,089 - INFO - School: ALBA-GOLDEN ELEM
+2025-03-03 10:04:30,089 - INFO - Quality Score: 100
+2025-03-03 10:04:30,089 - INFO - Quality Issues: 
+2025-03-03 10:04:30,089 - INFO - ✅ Data extracted: ALBA-GOLDEN ELEM
+2025-03-03 10:04:32,741 - INFO - 
+🏫 Processing school 43/105: https://txschools.gov/?view=school&id=043907118&lng=en&page=3
+2025-03-03 10:04:39,656 - INFO - School: ALBERT & IOLA LEE DAVIS MALVERN ELEM
+2025-03-03 10:04:39,656 - INFO - Quality Score: 90
+2025-03-03 10:04:39,656 - INFO - Quality Issues: School Website not available
+2025-03-03 10:04:39,656 - INFO - ✅ Data extracted: ALBERT & IOLA LEE DAVIS MALVERN ELEM
+2025-03-03 10:04:42,409 - INFO - 
+🏫 Processing school 44/105: https://txschools.gov/?view=school&id=214901104&lng=en&page=3
+2025-03-03 10:04:44,830 - INFO - School: ALBERTO AND CELIA BARRERA ELEM
+2025-03-03 10:04:44,830 - INFO - Quality Score: 100
+2025-03-03 10:04:44,830 - INFO - Quality Issues: 
+2025-03-03 10:04:44,830 - INFO - ✅ Data extracted: ALBERTO AND CELIA BARRERA ELEM
+2025-03-03 10:04:47,606 - INFO - 
+🏫 Processing school 45/105: https://txschools.gov/?view=school&id=221901112&lng=en&page=3
+2025-03-03 10:04:50,142 - INFO - School: ALCORTA ELEM
+2025-03-03 10:04:50,142 - INFO - Quality Score: 100
+2025-03-03 10:04:50,142 - INFO - Quality Issues: 
+2025-03-03 10:04:50,142 - INFO - ✅ Data extracted: ALCORTA ELEM
+2025-03-03 10:04:52,580 - INFO - 
+🏫 Processing school 46/105: https://txschools.gov/?view=school&id=101912102&lng=en&page=4
+2025-03-03 10:04:54,626 - INFO - School: ALCOTT ELEM
+2025-03-03 10:04:54,626 - INFO - Quality Score: 100
+2025-03-03 10:04:54,626 - INFO - Quality Issues: 
+2025-03-03 10:04:54,626 - INFO - ✅ Data extracted: ALCOTT ELEM
+2025-03-03 10:04:56,486 - INFO - 
+🏫 Processing school 47/105: https://txschools.gov/?view=school&id=152901194&lng=en&page=4
+2025-03-03 10:05:05,365 - INFO - School: ALDERSON ELEM
+2025-03-03 10:05:05,366 - INFO - Quality Score: 90
+2025-03-03 10:05:05,366 - INFO - Quality Issues: School Website not available
+2025-03-03 10:05:05,366 - INFO - ✅ Data extracted: ALDERSON ELEM

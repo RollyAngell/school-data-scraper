@@ -11,7 +11,7 @@ from datetime import datetime
 
 # Configuration
 URL = "https://txschools.gov/?view=schools&lng=en"
-MAX_PAGES = 2  # Change to a number (e.g., 10) to limit pages, or leave as None for all pages.
+MAX_PAGES = 7  # Change to a number (e.g., 10) to limit pages, or leave as None for all pages.
 
 # Logging configuration
 def setup_logging():
@@ -67,8 +67,7 @@ def extract_school_links(driver, page_number):
     school_links = []
 
     try:
-        # Aumentar el timeout para páginas más lentas
-        WebDriverWait(driver, 20).until(  # Aumentado de 10 a 20 segundos
+        WebDriverWait(driver, 20).until(
             EC.presence_of_element_located((By.TAG_NAME, "table"))
         )
 
@@ -78,11 +77,16 @@ def extract_school_links(driver, page_number):
         
         print(f"📄 Page {page_number} - Schools found: {total_schools}")
 
-        # Extract links for all schools on the page
+        # Extract links and add page number parameter
         for row in rows:
             try:
                 link_element = row.find_element(By.XPATH, ".//a")
                 school_link = link_element.get_attribute("href")
+                # Add page number to the link
+                if '?' in school_link:
+                    school_link += f'&page={page_number}'
+                else:
+                    school_link += f'?page={page_number}'
                 school_links.append(school_link)
                 print(f"🔗 School link found: {school_link}")
             except Exception as e:
@@ -196,6 +200,7 @@ def validate_school_data(data):
 def extract_school_data(driver, page_number):
     logger = logging.getLogger(__name__)
     data_fields = {
+        "Record Number": "0",  # Will be set in process_school_links
         "Page Number": str(page_number),
         "School Name": "Not Found",
         "Address 1": "Not Found",
@@ -414,11 +419,15 @@ def process_school_links(driver, links):
     
     for index, link in enumerate(links, 1):
         try:
+            # Extract page number from the link
+            page_number = link.split('page=')[1].split('&')[0] if 'page=' in link else "1"
+            
             logger.info(f"\n🏫 Processing school {index}/{total_links}: {link}")
             driver.get(link)
             time.sleep(random.uniform(1, 2))
             
-            school_data = extract_school_data(driver, index)
+            school_data = extract_school_data(driver, page_number)
+            school_data["Record Number"] = str(index)  # Add record number
             all_school_data.append(school_data)
             
             # Save progress every 10 schools
@@ -438,7 +447,7 @@ def process_school_links(driver, links):
 
 def save_progress(data, filename):
     """
-    Guardar progreso parcial
+    Save partial progress
     """
     output_dir = ensure_output_directory("progress")
     full_path = os.path.join(output_dir, filename)
