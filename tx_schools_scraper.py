@@ -11,7 +11,7 @@ from datetime import datetime
 
 # Configuration
 URL = "https://txschools.gov/?view=schools&lng=en"
-MAX_PAGES = 7  # Change to a number (e.g., 10) to limit pages, or leave as None for all pages.
+MAX_PAGES = None  # Change to a number (e.g., 10) to limit pages, or leave as None for all pages.
 
 # Logging configuration
 def setup_logging():
