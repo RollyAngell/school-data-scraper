@@ -1,0 +1,351 @@
+2025-03-03 01:59:58,392 - INFO - 🚀 Starting scraping process...
+2025-03-03 02:00:16,221 - INFO - 
+📄 Processing page 1
+2025-03-03 02:00:16,325 - INFO - 📊 Links found: 15
+2025-03-03 02:00:16,325 - INFO - 
+🏫 Processing school: https://txschools.gov/?view=school&id=108913118&lng=en
+2025-03-03 02:00:20,444 - INFO - School: 21ST CENTURY EARLY LEARNING FOUNDATIONS ACADEMY
+2025-03-03 02:00:20,444 - INFO - Quality Score: 100
+2025-03-03 02:00:20,444 - INFO - Quality Issues: 
+2025-03-03 02:00:20,445 - INFO - ✅ Data extracted: 21ST CENTURY EARLY LEARNING FOUNDATIONS ACADEMY
+2025-03-03 02:00:20,445 - INFO - 
+🏫 Processing school: https://txschools.gov/?view=school&id=077901101&lng=en
+2025-03-03 02:00:24,572 - INFO - School: A B DUNCAN COLLEGIATE ELEM
+2025-03-03 02:00:24,580 - INFO - Quality Score: 100
+2025-03-03 02:00:24,580 - INFO - Quality Issues: 
+2025-03-03 02:00:24,580 - INFO - ✅ Data extracted: A B DUNCAN COLLEGIATE ELEM
+2025-03-03 02:00:24,580 - INFO - 
+🏫 Processing school: https://txschools.gov/?view=school&id=147903103&lng=en
+2025-03-03 02:00:28,774 - INFO - School: A B MCBAY ELEM
+2025-03-03 02:00:28,774 - INFO - Quality Score: 100
+2025-03-03 02:00:28,774 - INFO - Quality Issues: 
+2025-03-03 02:00:28,774 - INFO - ✅ Data extracted: A B MCBAY ELEM
+2025-03-03 02:00:28,774 - INFO - 
+🏫 Processing school: https://txschools.gov/?view=school&id=126905103&lng=en
+2025-03-03 02:00:33,573 - INFO - School: A G ELDER ELEM
+2025-03-03 02:00:33,573 - INFO - Quality Score: 100
+2025-03-03 02:00:33,573 - INFO - Quality Issues: 
+2025-03-03 02:00:33,573 - INFO - ✅ Data extracted: A G ELDER ELEM
+2025-03-03 02:00:33,573 - INFO - 
+🏫 Processing school: https://txschools.gov/?view=school&id=108902104&lng=en
+2025-03-03 02:00:36,913 - INFO - School: A M OCHOA ELEM
+2025-03-03 02:00:36,914 - INFO - Quality Score: 100
+2025-03-03 02:00:36,914 - INFO - Quality Issues: 
+2025-03-03 02:00:36,914 - INFO - ✅ Data extracted: A M OCHOA ELEM
+2025-03-03 02:00:36,914 - INFO - 
+🏫 Processing school: https://txschools.gov/?view=school&id=220905153&lng=en
+2025-03-03 02:00:40,746 - INFO - School: A M PATE ELEM
+2025-03-03 02:00:40,746 - INFO - Quality Score: 100
+2025-03-03 02:00:40,746 - INFO - Quality Issues: 
+2025-03-03 02:00:40,746 - INFO - ✅ Data extracted: A M PATE ELEM
+2025-03-03 02:00:40,746 - INFO - 
+🏫 Processing school: https://txschools.gov/?view=school&id=108913113&lng=en
+2025-03-03 02:00:45,199 - INFO - School: A N RICO ELEM
+2025-03-03 02:00:45,199 - INFO - Quality Score: 100
+2025-03-03 02:00:45,199 - INFO - Quality Issues: 
+2025-03-03 02:00:45,199 - INFO - ✅ Data extracted: A N RICO ELEM
+2025-03-03 02:00:45,199 - INFO - 
+🏫 Processing school: https://txschools.gov/?view=school&id=020905102&lng=en
+2025-03-03 02:00:53,332 - INFO - School: A P BEUTEL ELEM
+2025-03-03 02:00:53,332 - INFO - Quality Score: 90
+2025-03-03 02:00:53,332 - INFO - Quality Issues: School Website not available
+2025-03-03 02:00:53,332 - INFO - ✅ Data extracted: A P BEUTEL ELEM
+2025-03-03 02:00:53,332 - INFO - 
+🏫 Processing school: https://txschools.gov/?view=school&id=220917101&lng=en
+2025-03-03 02:00:58,011 - INFO - School: A V CATO ELEM
+2025-03-03 02:00:58,011 - INFO - Quality Score: 100
+2025-03-03 02:00:58,011 - INFO - Quality Issues: 
+2025-03-03 02:00:58,011 - INFO - ✅ Data extracted: A V CATO ELEM
+2025-03-03 02:00:58,011 - INFO - 
+🏫 Processing school: https://txschools.gov/?view=school&id=057829001&lng=en
+2025-03-03 02:01:00,945 - INFO - School: A+ ACADEMY ELEM
+2025-03-03 02:01:00,945 - INFO - Quality Score: 100
+2025-03-03 02:01:00,945 - INFO - Quality Issues: 
+2025-03-03 02:01:00,946 - INFO - ✅ Data extracted: A+ ACADEMY ELEM
+2025-03-03 02:01:00,946 - INFO - 
+🏫 Processing school: https://txschools.gov/?view=school&id=139911102&lng=en
+2025-03-03 02:01:05,395 - INFO - School: AARON PARKER ELEM
+2025-03-03 02:01:05,396 - INFO - Quality Score: 100
+2025-03-03 02:01:05,396 - INFO - Quality Issues: 
+2025-03-03 02:01:05,396 - INFO - ✅ Data extracted: AARON PARKER ELEM
+2025-03-03 02:01:05,396 - INFO - 
+🏫 Processing school: https://txschools.gov/?view=school&id=057909143&lng=en
+2025-03-03 02:01:09,043 - INFO - School: ABBETT ELEM
+2025-03-03 02:01:09,043 - INFO - Quality Score: 100
+2025-03-03 02:01:09,043 - INFO - Quality Issues: 
+2025-03-03 02:01:09,043 - INFO - ✅ Data extracted: ABBETT ELEM
+2025-03-03 02:01:09,043 - INFO - 
+🏫 Processing school: https://txschools.gov/?view=school&id=109901001&lng=en
+2025-03-03 02:01:12,036 - INFO - School: ABBOTT SCHOOL
+2025-03-03 02:01:12,037 - INFO - Quality Score: 100
+2025-03-03 02:01:12,037 - INFO - Quality Issues: 
+2025-03-03 02:01:12,037 - INFO - ✅ Data extracted: ABBOTT SCHOOL
+2025-03-03 02:01:12,037 - INFO - 
+🏫 Processing school: https://txschools.gov/?view=school&id=095901101&lng=en
+2025-03-03 02:01:15,829 - INFO - School: ABERNATHY ELEM
+2025-03-03 02:01:15,829 - INFO - Quality Score: 100
+2025-03-03 02:01:15,830 - INFO - Quality Issues: 
+2025-03-03 02:01:15,830 - INFO - ✅ Data extracted: ABERNATHY ELEM
+2025-03-03 02:01:15,830 - INFO - 
+🏫 Processing school: https://txschools.gov/?view=school&id=014901102&lng=en
+2025-03-03 02:01:20,690 - INFO - School: ACADEMY EARLY CHILDHOOD CENTER
+2025-03-03 02:01:20,690 - INFO - Quality Score: 100
+2025-03-03 02:01:20,690 - INFO - Quality Issues: 
+2025-03-03 02:01:20,690 - INFO - ✅ Data extracted: ACADEMY EARLY CHILDHOOD CENTER
+2025-03-03 02:01:37,475 - INFO - 
+📄 Processing page 2
+2025-03-03 02:01:45,385 - INFO - 📊 Links found: 15
+2025-03-03 02:01:45,385 - INFO - 
+🏫 Processing school: https://txschools.gov/?view=school&id=220902116&lng=en
+2025-03-03 02:01:50,296 - INFO - School: ACADEMY AT CARRIE F THOMAS
+2025-03-03 02:01:50,297 - INFO - Quality Score: 100
+2025-03-03 02:01:50,297 - INFO - Quality Issues: 
+2025-03-03 02:01:50,297 - INFO - ✅ Data extracted: ACADEMY AT CARRIE F THOMAS
+2025-03-03 02:01:50,297 - INFO - 
+🏫 Processing school: https://txschools.gov/?view=school&id=126902101&lng=en
+2025-03-03 02:01:53,618 - INFO - School: ACADEMY AT NOLA DUNN
+2025-03-03 02:01:53,618 - INFO - Quality Score: 100
+2025-03-03 02:01:53,618 - INFO - Quality Issues: 
+2025-03-03 02:01:53,618 - INFO - ✅ Data extracted: ACADEMY AT NOLA DUNN
+2025-03-03 02:01:53,618 - INFO - 
+🏫 Processing school: https://txschools.gov/?view=school&id=057810101&lng=en
+2025-03-03 02:01:57,444 - INFO - School: ACADEMY OF DALLAS
+2025-03-03 02:01:57,444 - INFO - Quality Score: 100
+2025-03-03 02:01:57,444 - INFO - Quality Issues: 
+2025-03-03 02:01:57,444 - INFO - ✅ Data extracted: ACADEMY OF DALLAS
+2025-03-03 02:01:57,444 - INFO - 
+🏫 Processing school: https://txschools.gov/?view=school&id=101849101&lng=en
+2025-03-03 02:02:01,394 - INFO - School: ACCELERATED INTERDISCIPLINARY ACAD
+2025-03-03 02:02:01,395 - INFO - Quality Score: 100
+2025-03-03 02:02:01,395 - INFO - Quality Issues: 
+2025-03-03 02:02:01,395 - INFO - ✅ Data extracted: ACCELERATED INTERDISCIPLINARY ACAD
+2025-03-03 02:02:01,395 - INFO - 
+🏫 Processing school: https://txschools.gov/?view=school&id=057914132&lng=en
+2025-03-03 02:02:06,269 - INFO - School: ACHZIGER ELEM
+2025-03-03 02:02:06,269 - INFO - Quality Score: 100
+2025-03-03 02:02:06,269 - INFO - Quality Issues: 
+2025-03-03 02:02:06,269 - INFO - ✅ Data extracted: ACHZIGER ELEM
+2025-03-03 02:02:06,269 - INFO - 
+🏫 Processing school: https://txschools.gov/?view=school&id=111901102&lng=en
+2025-03-03 02:02:10,634 - INFO - School: ACTON ELEM
+2025-03-03 02:02:10,635 - INFO - Quality Score: 100
+2025-03-03 02:02:10,635 - INFO - Quality Issues: 
+2025-03-03 02:02:10,635 - INFO - ✅ Data extracted: ACTON ELEM
+2025-03-03 02:02:10,635 - INFO - 
+🏫 Processing school: https://txschools.gov/?view=school&id=246913102&lng=en
+2025-03-03 02:02:20,160 - INFO - School: ADA MAE FAUBION ELEM
+2025-03-03 02:02:20,160 - INFO - Quality Score: 90
+2025-03-03 02:02:20,160 - INFO - Quality Issues: School Website not available
+2025-03-03 02:02:20,160 - INFO - ✅ Data extracted: ADA MAE FAUBION ELEM
+2025-03-03 02:02:20,161 - INFO - 
+🏫 Processing school: https://txschools.gov/?view=school&id=101907107&lng=en
+2025-03-03 02:02:23,713 - INFO - School: ADAM ELEM
+2025-03-03 02:02:23,713 - INFO - Quality Score: 100
+2025-03-03 02:02:23,713 - INFO - Quality Issues: 
+2025-03-03 02:02:23,713 - INFO - ✅ Data extracted: ADAM ELEM
+2025-03-03 02:02:23,713 - INFO - 
+🏫 Processing school: https://txschools.gov/?view=school&id=126903101&lng=en
+2025-03-03 02:02:28,636 - INFO - School: ADAMS ELEM
+2025-03-03 02:02:28,636 - INFO - Quality Score: 100
+2025-03-03 02:02:28,636 - INFO - Quality Issues: 
+2025-03-03 02:02:28,636 - INFO - ✅ Data extracted: ADAMS ELEM
+2025-03-03 02:02:28,636 - INFO - 
+🏫 Processing school: https://txschools.gov/?view=school&id=220901161&lng=en
+2025-03-03 02:02:33,375 - INFO - School: ADAMS ELEM
+2025-03-03 02:02:33,375 - INFO - Quality Score: 100
+2025-03-03 02:02:33,375 - INFO - Quality Issues: 
+2025-03-03 02:02:33,375 - INFO - ✅ Data extracted: ADAMS ELEM
+2025-03-03 02:02:33,375 - INFO - 
+🏫 Processing school: https://txschools.gov/?view=school&id=015915123&lng=en
+2025-03-03 02:02:37,646 - INFO - School: ADAMS HILL ELEM
+2025-03-03 02:02:37,647 - INFO - Quality Score: 100
+2025-03-03 02:02:37,647 - INFO - Quality Issues: 
+2025-03-03 02:02:37,647 - INFO - ✅ Data extracted: ADAMS HILL ELEM
+2025-03-03 02:02:37,647 - INFO - 
+🏫 Processing school: https://txschools.gov/?view=school&id=057905247&lng=en
+2025-03-03 02:02:41,383 - INFO - School: ADELFA BOTELLO CALLEJO ELEM
+2025-03-03 02:02:41,384 - INFO - Quality Score: 100
+2025-03-03 02:02:41,384 - INFO - Quality Issues: 
+2025-03-03 02:02:41,384 - INFO - ✅ Data extracted: ADELFA BOTELLO CALLEJO ELEM
+2025-03-03 02:02:41,384 - INFO - 
+🏫 Processing school: https://txschools.gov/?view=school&id=057905219&lng=en
+2025-03-03 02:02:45,254 - INFO - School: ADELLE TURNER ELEM
+2025-03-03 02:02:45,254 - INFO - Quality Score: 100
+2025-03-03 02:02:45,254 - INFO - Quality Issues: 
+2025-03-03 02:02:45,254 - INFO - ✅ Data extracted: ADELLE TURNER ELEM
+2025-03-03 02:02:45,254 - INFO - 
+🏫 Processing school: https://txschools.gov/?view=school&id=180903001&lng=en
+2025-03-03 02:02:49,143 - INFO - School: ADRIAN SCHOOL
+2025-03-03 02:02:49,143 - INFO - Quality Score: 100
+2025-03-03 02:02:49,143 - INFO - Quality Issues: 
+2025-03-03 02:02:49,143 - INFO - ✅ Data extracted: ADRIAN SCHOOL
+2025-03-03 02:02:49,143 - INFO - 
+🏫 Processing school: https://txschools.gov/?view=school&id=015907026&lng=en
+2025-03-03 02:02:53,546 - INFO - School: ADVANCED LEARNING ACADEMY
+2025-03-03 02:02:53,547 - INFO - Quality Score: 100
+2025-03-03 02:02:53,547 - INFO - Quality Issues: 
+2025-03-03 02:02:53,547 - INFO - ✅ Data extracted: ADVANCED LEARNING ACADEMY
+2025-03-03 02:03:11,531 - INFO - 
+📄 Processing page 3
+2025-03-03 02:03:28,762 - INFO - 📊 Links found: 15
+2025-03-03 02:03:28,762 - INFO - 
+🏫 Processing school: https://txschools.gov/?view=school&id=057806101&lng=en
+2025-03-03 02:03:33,513 - INFO - School: ADVANTAGE ACADEMY
+2025-03-03 02:03:33,513 - INFO - Quality Score: 100
+2025-03-03 02:03:33,513 - INFO - Quality Issues: 
+2025-03-03 02:03:33,513 - INFO - ✅ Data extracted: ADVANTAGE ACADEMY
+2025-03-03 02:03:33,513 - INFO - 
+🏫 Processing school: https://txschools.gov/?view=school&id=015907117&lng=en
+2025-03-03 02:03:38,076 - INFO - School: AGNES COTTON ACADEMY
+2025-03-03 02:03:38,076 - INFO - Quality Score: 100
+2025-03-03 02:03:38,076 - INFO - Quality Issues: 
+2025-03-03 02:03:38,076 - INFO - ✅ Data extracted: AGNES COTTON ACADEMY
+2025-03-03 02:03:38,076 - INFO - 
+🏫 Processing school: https://txschools.gov/?view=school&id=178901101&lng=en
+2025-03-03 02:03:42,479 - INFO - School: AGUA DULCE ELEM
+2025-03-03 02:03:42,480 - INFO - Quality Score: 100
+2025-03-03 02:03:42,480 - INFO - Quality Issues: 
+2025-03-03 02:03:42,480 - INFO - ✅ Data extracted: AGUA DULCE ELEM
+2025-03-03 02:03:42,480 - INFO - 
+🏫 Processing school: https://txschools.gov/?view=school&id=108909113&lng=en
+2025-03-03 02:03:47,279 - INFO - School: AIDA C ESCOBAR ELEM
+2025-03-03 02:03:47,280 - INFO - Quality Score: 100
+2025-03-03 02:03:47,280 - INFO - Quality Issues: 
+2025-03-03 02:03:47,280 - INFO - ✅ Data extracted: AIDA C ESCOBAR ELEM
+2025-03-03 02:03:47,280 - INFO - 
+🏫 Processing school: https://txschools.gov/?view=school&id=031901133&lng=en
+2025-03-03 02:03:50,558 - INFO - School: AIKEN ELEM
+2025-03-03 02:03:50,558 - INFO - Quality Score: 100
+2025-03-03 02:03:50,558 - INFO - Quality Issues: 
+2025-03-03 02:03:50,558 - INFO - ✅ Data extracted: AIKEN ELEM
+2025-03-03 02:03:50,558 - INFO - 
+🏫 Processing school: https://txschools.gov/?view=school&id=057916135&lng=en
+2025-03-03 02:04:32,241 - INFO - 🚀 Starting scraping process...
+2025-03-03 02:04:49,354 - INFO - 
+📄 Processing page 1
+2025-03-03 02:04:49,515 - INFO - 📊 Links found: 15
+2025-03-03 02:04:49,516 - INFO - 
+🏫 Processing school: https://txschools.gov/?view=school&id=108913118&lng=en
+2025-03-03 02:04:55,073 - INFO - School: 21ST CENTURY EARLY LEARNING FOUNDATIONS ACADEMY
+2025-03-03 02:04:55,073 - INFO - Quality Score: 100
+2025-03-03 02:04:55,073 - INFO - Quality Issues: 
+2025-03-03 02:04:55,073 - INFO - ✅ Data extracted: 21ST CENTURY EARLY LEARNING FOUNDATIONS ACADEMY
+2025-03-03 02:04:55,073 - INFO - 
+🏫 Processing school: https://txschools.gov/?view=school&id=077901101&lng=en
+2025-03-03 02:04:59,565 - INFO - School: A B DUNCAN COLLEGIATE ELEM
+2025-03-03 02:04:59,566 - INFO - Quality Score: 100
+2025-03-03 02:04:59,566 - INFO - Quality Issues: 
+2025-03-03 02:04:59,566 - INFO - ✅ Data extracted: A B DUNCAN COLLEGIATE ELEM
+2025-03-03 02:04:59,566 - INFO - 
+🏫 Processing school: https://txschools.gov/?view=school&id=147903103&lng=en
+2025-03-03 02:05:03,570 - INFO - School: A B MCBAY ELEM
+2025-03-03 02:05:03,571 - INFO - Quality Score: 100
+2025-03-03 02:05:03,571 - INFO - Quality Issues: 
+2025-03-03 02:05:03,571 - INFO - ✅ Data extracted: A B MCBAY ELEM
+2025-03-03 02:05:03,571 - INFO - 
+🏫 Processing school: https://txschools.gov/?view=school&id=126905103&lng=en
+2025-03-03 02:05:07,791 - INFO - School: A G ELDER ELEM
+2025-03-03 02:05:07,791 - INFO - Quality Score: 100
+2025-03-03 02:05:07,791 - INFO - Quality Issues: 
+2025-03-03 02:05:07,791 - INFO - ✅ Data extracted: A G ELDER ELEM
+2025-03-03 02:05:07,791 - INFO - 
+🏫 Processing school: https://txschools.gov/?view=school&id=108902104&lng=en
+2025-03-03 02:05:11,417 - INFO - School: A M OCHOA ELEM
+2025-03-03 02:05:11,417 - INFO - Quality Score: 100
+2025-03-03 02:05:11,417 - INFO - Quality Issues: 
+2025-03-03 02:05:11,417 - INFO - ✅ Data extracted: A M OCHOA ELEM
+2025-03-03 02:05:11,417 - INFO - 
+🏫 Processing school: https://txschools.gov/?view=school&id=220905153&lng=en
+2025-03-03 02:05:14,798 - INFO - School: A M PATE ELEM
+2025-03-03 02:05:14,798 - INFO - Quality Score: 100
+2025-03-03 02:05:14,798 - INFO - Quality Issues: 
+2025-03-03 02:05:14,798 - INFO - ✅ Data extracted: A M PATE ELEM
+2025-03-03 02:05:14,798 - INFO - 
+🏫 Processing school: https://txschools.gov/?view=school&id=108913113&lng=en
+2025-03-03 02:05:19,179 - INFO - School: A N RICO ELEM
+2025-03-03 02:05:19,179 - INFO - Quality Score: 100
+2025-03-03 02:05:19,179 - INFO - Quality Issues: 
+2025-03-03 02:05:19,179 - INFO - ✅ Data extracted: A N RICO ELEM
+2025-03-03 02:05:19,179 - INFO - 
+🏫 Processing school: https://txschools.gov/?view=school&id=020905102&lng=en
+2025-03-03 02:05:27,897 - INFO - School: A P BEUTEL ELEM
+2025-03-03 02:05:27,897 - INFO - Quality Score: 90
+2025-03-03 02:05:27,897 - INFO - Quality Issues: School Website not available
+2025-03-03 02:05:27,897 - INFO - ✅ Data extracted: A P BEUTEL ELEM
+2025-03-03 02:05:27,897 - INFO - 
+🏫 Processing school: https://txschools.gov/?view=school&id=220917101&lng=en
+2025-03-03 02:05:32,391 - INFO - School: A V CATO ELEM
+2025-03-03 02:05:32,391 - INFO - Quality Score: 100
+2025-03-03 02:05:32,391 - INFO - Quality Issues: 
+2025-03-03 02:05:32,391 - INFO - ✅ Data extracted: A V CATO ELEM
+2025-03-03 02:05:32,391 - INFO - 
+🏫 Processing school: https://txschools.gov/?view=school&id=057829001&lng=en
+2025-03-03 02:05:35,937 - INFO - School: A+ ACADEMY ELEM
+2025-03-03 02:05:35,937 - INFO - Quality Score: 100
+2025-03-03 02:05:35,937 - INFO - Quality Issues: 
+2025-03-03 02:05:35,937 - INFO - ✅ Data extracted: A+ ACADEMY ELEM
+2025-03-03 02:05:35,937 - INFO - 
+🏫 Processing school: https://txschools.gov/?view=school&id=139911102&lng=en
+2025-03-03 02:05:40,809 - INFO - School: AARON PARKER ELEM
+2025-03-03 02:05:40,809 - INFO - Quality Score: 100
+2025-03-03 02:05:40,809 - INFO - Quality Issues: 
+2025-03-03 02:05:40,809 - INFO - ✅ Data extracted: AARON PARKER ELEM
+2025-03-03 02:05:40,809 - INFO - 
+🏫 Processing school: https://txschools.gov/?view=school&id=057909143&lng=en
+2025-03-03 02:05:45,632 - INFO - School: ABBETT ELEM
+2025-03-03 02:05:45,633 - INFO - Quality Score: 100
+2025-03-03 02:05:45,633 - INFO - Quality Issues: 
+2025-03-03 02:05:45,633 - INFO - ✅ Data extracted: ABBETT ELEM
+2025-03-03 02:05:45,633 - INFO - 
+🏫 Processing school: https://txschools.gov/?view=school&id=109901001&lng=en
+2025-03-03 02:05:50,114 - INFO - School: ABBOTT SCHOOL
+2025-03-03 02:05:50,114 - INFO - Quality Score: 100
+2025-03-03 02:05:50,114 - INFO - Quality Issues: 
+2025-03-03 02:05:50,114 - INFO - ✅ Data extracted: ABBOTT SCHOOL
+2025-03-03 02:05:50,114 - INFO - 
+🏫 Processing school: https://txschools.gov/?view=school&id=095901101&lng=en
+2025-03-03 02:05:53,495 - INFO - School: ABERNATHY ELEM
+2025-03-03 02:05:53,495 - INFO - Quality Score: 100
+2025-03-03 02:05:53,495 - INFO - Quality Issues: 
+2025-03-03 02:05:53,495 - INFO - ✅ Data extracted: ABERNATHY ELEM
+2025-03-03 02:05:53,495 - INFO - 
+🏫 Processing school: https://txschools.gov/?view=school&id=014901102&lng=en
+2025-03-03 02:05:58,320 - INFO - School: ACADEMY EARLY CHILDHOOD CENTER
+2025-03-03 02:05:58,321 - INFO - Quality Score: 100
+2025-03-03 02:05:58,321 - INFO - Quality Issues: 
+2025-03-03 02:05:58,321 - INFO - ✅ Data extracted: ACADEMY EARLY CHILDHOOD CENTER
+2025-03-03 02:06:14,075 - INFO - 
+📄 Processing page 2
+2025-03-03 02:06:23,149 - INFO - 📊 Links found: 15
+2025-03-03 02:06:23,149 - INFO - 
+🏫 Processing school: https://txschools.gov/?view=school&id=220902116&lng=en
+2025-03-03 02:06:27,167 - INFO - School: ACADEMY AT CARRIE F THOMAS
+2025-03-03 02:06:27,168 - INFO - Quality Score: 100
+2025-03-03 02:06:27,168 - INFO - Quality Issues: 
+2025-03-03 02:06:27,168 - INFO - ✅ Data extracted: ACADEMY AT CARRIE F THOMAS
+2025-03-03 02:06:27,168 - INFO - 
+🏫 Processing school: https://txschools.gov/?view=school&id=126902101&lng=en
+2025-03-03 02:06:30,310 - INFO - School: ACADEMY AT NOLA DUNN
+2025-03-03 02:06:30,310 - INFO - Quality Score: 100
+2025-03-03 02:06:30,310 - INFO - Quality Issues: 
+2025-03-03 02:06:30,310 - INFO - ✅ Data extracted: ACADEMY AT NOLA DUNN
+2025-03-03 02:06:30,310 - INFO - 
+🏫 Processing school: https://txschools.gov/?view=school&id=057810101&lng=en
+2025-03-03 02:06:33,893 - INFO - School: ACADEMY OF DALLAS
+2025-03-03 02:06:33,893 - INFO - Quality Score: 100
+2025-03-03 02:06:33,893 - INFO - Quality Issues: 
+2025-03-03 02:06:33,893 - INFO - ✅ Data extracted: ACADEMY OF DALLAS
+2025-03-03 02:06:33,893 - INFO - 
+🏫 Processing school: https://txschools.gov/?view=school&id=101849101&lng=en
+2025-03-03 02:06:37,990 - INFO - School: ACCELERATED INTERDISCIPLINARY ACAD
+2025-03-03 02:06:37,990 - INFO - Quality Score: 100
+2025-03-03 02:06:37,990 - INFO - Quality Issues: 
+2025-03-03 02:06:37,990 - INFO - ✅ Data extracted: ACCELERATED INTERDISCIPLINARY ACAD
+2025-03-03 02:06:37,991 - INFO - 
+🏫 Processing school: https://txschools.gov/?view=school&id=057914132&lng=en
+2025-03-03 02:06:42,668 - INFO - School: ACHZIGER ELEM
+2025-03-03 02:06:42,668 - INFO - Quality Score: 100
+2025-03-03 02:06:42,668 - INFO - Quality Issues: 
+2025-03-03 02:06:42,668 - INFO - ✅ Data extracted: ACHZIGER ELEM
+2025-03-03 02:06:42,668 - INFO - 
+🏫 Processing school: https://txschools.gov/?view=school&id=111901102&lng=en
