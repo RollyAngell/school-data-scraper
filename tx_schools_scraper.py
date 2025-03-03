@@ -11,7 +11,7 @@ from datetime import datetime
 
 # Configuration
 URL = "https://txschools.gov/?view=schools&lng=en"
-MAX_PAGES = 3  # Change to a number (e.g., 10) to limit pages, or leave as None for all pages.
+MAX_PAGES = 30  # Change to a number (e.g., 10) to limit pages, or leave as None for all pages.
 
 # Logging configuration
 def setup_logging():
@@ -67,8 +67,8 @@ def extract_school_links(driver, page_number):
     school_links = []
 
     try:
-        # Wait for table to be visible
-        WebDriverWait(driver, 10).until(
+        # Aumentar el timeout para páginas más lentas
+        WebDriverWait(driver, 20).until(  # Aumentado de 10 a 20 segundos
             EC.presence_of_element_located((By.TAG_NAME, "table"))
         )
 
@@ -355,89 +355,132 @@ def navigate_to_next_page(driver):
         print(f"❌ Error al navegar: {str(e)}")
         return False
 
-# Main function to extract data from all schools
-def scrape_schools():
-    logger = setup_logging()
-    driver = setup_driver()
-    all_school_data = []
+def get_all_school_links_first(driver):
+    """
+    Get all school links first and then process them
+    """
+    logger = logging.getLogger(__name__)
+    all_links = []
     page_number = 1
     
     try:
-        logger.info("🚀 Starting scraping process...")
-        driver.get(URL)
-        time.sleep(random.uniform(3, 5))
+        logger.info("🔍 Starting link collection...")
         
-        # Apply initial grade level filters
+        # Apply filters only once
         for grade in ["Early Education", "Prekindergarten", "Kindergarten"]:
             if not select_grade_level(driver, grade):
                 logger.warning(f"⚠️ Could not select grade: {grade}")
                 continue
-            time.sleep(random.uniform(2, 4))
-
+            time.sleep(random.uniform(1, 2))
+        
         while True:
-            logger.info(f"\n📄 Processing page {page_number}")
+            logger.info(f"📃 Getting links from page {page_number}")
+            links = extract_school_links(driver, page_number)
             
-            # If not the first page, navigate to the correct page
-            if page_number > 1:
-                for p in range(1, page_number):
-                    if not navigate_to_next_page(driver):
-                        logger.error(f"❌ Could not navigate to page {p + 1}")
-                        return
-                    time.sleep(random.uniform(2, 4))
-            
-            # Extract school links
-            school_links = extract_school_links(driver, page_number)
-            
-            if not school_links:
-                logger.error("❌ No school links found.")
+            if not links:
+                logger.info("🏁 No more links found")
                 break
                 
-            logger.info(f"📊 Links found: {len(school_links)}")
+            all_links.extend(links)
+            logger.info(f"✅ Links found on page {page_number}: {len(links)}")
             
-            # Process each school
-            for link in school_links:
-                try:
-                    logger.info(f"\n🏫 Processing school: {link}")
-                    time.sleep(random.uniform(2, 4))
-                    driver.get(link)
-                    school_data = extract_school_data(driver, page_number)
-                    all_school_data.append(school_data)
-                    logger.info(f"✅ Data extracted: {school_data['School Name']}")
-                except Exception as e:
-                    logger.error(f"❌ Error processing school: {str(e)}")
-                    continue
-            
-            # Verify if we've reached the page limit
             if MAX_PAGES and page_number >= MAX_PAGES:
                 logger.info("🏁 Maximum page limit reached")
                 break
-            
-            # Go back to the main page and reapply filters
-            driver.get(URL)
-            time.sleep(random.uniform(2, 4))
-            
-            # Reapply filters
-            for grade in ["Early Education", "Prekindergarten", "Kindergarten"]:
-                if not select_grade_level(driver, grade):
-                    logger.warning(f"⚠️ No se pudo seleccionar el grado: {grade}")
-                    continue
-                time.sleep(random.uniform(2, 4))
-            
+                
+            if not navigate_to_next_page(driver):
+                break
+                
             page_number += 1
-            time.sleep(random.uniform(3, 5))
+            time.sleep(random.uniform(2, 3))
+            
+    except Exception as e:
+        logger.error(f"❌ Error collecting links: {str(e)}")
+    
+    logger.info(f"📊 Total links collected: {len(all_links)}")
+    return all_links
+
+def process_school_links(driver, links):
+    """
+    Process the list of school links
+    """
+    logger = logging.getLogger(__name__)
+    all_school_data = []
+    total_links = len(links)
+    
+    for index, link in enumerate(links, 1):
+        try:
+            logger.info(f"\n🏫 Processing school {index}/{total_links}: {link}")
+            driver.get(link)
+            time.sleep(random.uniform(1, 2))
+            
+            school_data = extract_school_data(driver, index)
+            all_school_data.append(school_data)
+            
+            # Save progress every 10 schools
+            if index % 10 == 0:
+                save_progress(all_school_data, f"progress_batch_{index}.csv")
+                
+            logger.info(f"✅ Data extracted: {school_data['School Name']}")
+            
+        except Exception as e:
+            logger.error(f"❌ Error processing school: {str(e)}")
+            continue
+            
+        # Random pause between schools
+        time.sleep(random.uniform(1, 3))
+    
+    return all_school_data
+
+def save_progress(data, filename):
+    """
+    Guardar progreso parcial
+    """
+    output_dir = ensure_output_directory("progress")
+    full_path = os.path.join(output_dir, filename)
+    
+    if data:
+        keys = data[0].keys()
+        with open(full_path, mode='w', newline="", encoding="utf-8") as file:
+            writer = csv.DictWriter(file, fieldnames=keys)
+            writer.writeheader()
+            writer.writerows(data)
+
+def scrape_schools():
+    logger = setup_logging()
+    driver = setup_driver()
+    
+    try:
+        logger.info("🚀 Starting scraping process...")
+        driver.get(URL)
+        time.sleep(random.uniform(2, 3))
+        
+        # Phase 1: Collect all links
+        all_links = get_all_school_links_first(driver)
+        
+        if not all_links:
+            logger.error("❌ No links found to process")
+            return
+            
+        # Phase 2: Process the links
+        logger.info("🔄 Starting link processing...")
+        all_school_data = process_school_links(driver, all_links)
+        
+        # Save final results
+        if all_school_data:
+            timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+            csv_filename = f"schools_data_{timestamp}.csv"
+            save_to_csv(all_school_data, csv_filename)
+            logger.info(f"📂 Data saved to {csv_filename}")
+            logger.info(f"📊 Total schools processed: {len(all_school_data)}")
+        else:
+            logger.warning("⚠️ No data to save")
 
     except Exception as e:
         logger.error(f"❌ General error: {str(e)}")
     
     finally:
         driver.quit()
-        if all_school_data:
-            csv_filename = f"schools_data_pages_1_to_{page_number}.csv"
-            save_to_csv(all_school_data, csv_filename)
-            logger.info(f"📂 Data saved to {csv_filename}")
-            logger.info(f"📊 Total schools processed: {len(all_school_data)}")
-        else:
-            logger.warning("⚠️ No data to save")
 
 # Run the script
 if __name__ == "__main__":

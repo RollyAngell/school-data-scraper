@@ -83,13 +83,6 @@ project/
 - Steeper learning curve
 - Limited JavaScript support
 
-#### Requests-HTML
-- Modern, simple API
-- JavaScript support
-- Faster than Selenium
-- Smaller community
-- Limited complex interactions
-
 ### Why Selenium?
 - Site requires JavaScript handling
 - Need for filter and pagination interaction
@@ -331,3 +324,24 @@ OK
 - Invalid entries score 90%
 - Each validation failure is logged with specific error message
 - Test results include validation details for debugging
+
+## Progress Files
+
+During scraper execution, files with the format `progress_batch_X.csv` are automatically generated in the `progress/` directory. These files are essential for the following reasons:
+
+### Why are they generated?
+- **Failure Recovery**: If the script is interrupted (due to network errors, system failures, etc.), progress is not lost
+- **Batch Processing**: Data is saved every 10 schools processed
+- **Real-time Monitoring**: Allows data quality verification during execution
+
+### When are they generated?
+1. Automatically every 10 schools processed (`progress_batch_X.csv`)
+2. When an error occurs during processing (`error_recovery_X.csv`)
+3. Upon completion of the entire process (`schools_data_TIMESTAMP.csv` in the `output/` directory)
+
+### Filename Structure
+- `progress_batch_X`: where X is the number of schools processed up to that point
+- Includes timestamp to prevent overwrites: `progress_batch_X_YYYYMMDD_HHMMSS.csv`
+
+### Important Note
+These files are included in `.gitignore` to prevent sensitive data from being uploaded to the repository.

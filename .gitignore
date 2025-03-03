@@ -31,5 +31,16 @@ ENV/
 *.swp
 *.swo
 
+# Scraping progress files
+progress/
+progress_*.csv
+error_recovery_*.csv
+*.backup
+
+# Logs
+*.log
+logs/
+scraper.log
+
 
 
