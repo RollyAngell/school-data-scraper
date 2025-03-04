@@ -8,10 +8,14 @@ import random
 import logging
 import os
 from datetime import datetime
+from concurrent.futures import ProcessPoolExecutor, ThreadPoolExecutor
+from queue import Queue
+import multiprocessing
+from functools import partial
 
 # Configuration
 URL = "https://txschools.gov/?view=schools&lng=en"
-MAX_PAGES = None  # Change to a number (e.g., 10) to limit pages, or leave as None for all pages.
+MAX_PAGES = 15 # Change to a number (e.g., 10) to limit pages, or leave as None for all pages.
 
 # Logging configuration
 def setup_logging():
@@ -284,33 +288,21 @@ def ensure_output_directory(directory="output"):
 
 # Function to save data to CSV
 def save_to_csv(data, filename):
-    if not data:
-        return
+    """
+    Save school data to CSV with sequential record numbers
+    """
+    headers = [
+        "Record Number", "Page Number", "School Name", "Address 1", "Address 2",
+        "City", "State", "Zip", "Phone", "Principal Name", "School Website",
+        "District", "Grades Served", "Data Quality Score", "Data Quality Issues"
+    ]
     
-    # Create output directory
-    output_dir = ensure_output_directory()
-    
-    # Create full path for the file
-    full_path = os.path.join(output_dir, filename)
-    
-    # Calculate overall quality metrics
-    total_schools = len(data)
-    avg_quality_score = sum(float(school["Data Quality Score"]) for school in data) / total_schools
-    schools_with_issues = sum(1 for school in data if school["Data Quality Issues"])
-    
-    # Add summary to log
-    logger = logging.getLogger(__name__)
-    logger.info("\n=== Data Quality Summary ===")
-    logger.info(f"Total schools processed: {total_schools}")
-    logger.info(f"Average quality score: {avg_quality_score:.2f}%")
-    logger.info(f"Schools with quality issues: {schools_with_issues}")
-    logger.info(f"Quality rate: {((total_schools - schools_with_issues) / total_schools) * 100:.2f}%")
-    logger.info(f"Data saved to: {full_path}")
-    
-    # Save data to CSV file
-    keys = data[0].keys()
-    with open(full_path, mode='w', newline="", encoding="utf-8") as file:
-        writer = csv.DictWriter(file, fieldnames=keys)
+    # Add sequential record numbers
+    for i, record in enumerate(data):
+        record["Record Number"] = i + 1  # Start from 1 instead of 0
+        
+    with open(filename, 'w', newline='', encoding='utf-8') as f:
+        writer = csv.DictWriter(f, fieldnames=headers)
         writer.writeheader()
         writer.writerows(data)
 
@@ -409,55 +401,69 @@ def get_all_school_links_first(driver):
     logger.info(f"📊 Total links collected: {len(all_links)}")
     return all_links, 1, last_page  # Return links and page range
 
-def process_school_links(driver, links):
+def process_school_batch(links_batch, batch_id):
     """
-    Process the list of school links
+    Process a batch of school links in parallel
+    """
+    logger = logging.getLogger(f"batch_{batch_id}")
+    driver = setup_driver()
+    batch_data = []
+    
+    try:
+        for link in links_batch:
+            try:
+                page_number = link.split('page=')[1].split('&')[0] if 'page=' in link else "1"
+                driver.get(link)
+                
+                # Reduce wait time but keep it reasonable
+                time.sleep(random.uniform(0.5, 1))
+                
+                school_data = extract_school_data(driver, page_number)
+                batch_data.append(school_data)
+                
+            except Exception as e:
+                logger.error(f"Error processing school {link}: {str(e)}")
+                continue
+                
+    finally:
+        driver.quit()
+        
+    return batch_data
+
+def process_school_links_parallel(links, num_processes=4, batch_size=50):
+    """
+    Process school links in parallel using multiple processes
     """
     logger = logging.getLogger(__name__)
     all_school_data = []
-    total_links = len(links)
     
-    for index, link in enumerate(links, 1):
-        try:
-            # Extract page number from the link
-            page_number = link.split('page=')[1].split('&')[0] if 'page=' in link else "1"
-            
-            logger.info(f"\n🏫 Processing school {index}/{total_links}: {link}")
-            driver.get(link)
-            time.sleep(random.uniform(1, 2))
-            
-            school_data = extract_school_data(driver, page_number)
-            school_data["Record Number"] = str(index)  # Add record number
-            all_school_data.append(school_data)
-            
-            # Save progress every 10 schools
-            if index % 10 == 0:
-                save_progress(all_school_data, f"progress_batch_{index}.csv")
+    # Split links into batches
+    link_batches = [links[i:i + batch_size] for i in range(0, len(links), batch_size)]
+    
+    logger.info(f"Processing {len(links)} schools in {len(link_batches)} batches")
+    
+    with ProcessPoolExecutor(max_workers=num_processes) as executor:
+        # Create partial function with batch_id
+        process_batch = partial(process_school_batch)
+        
+        # Process batches in parallel
+        futures = [executor.submit(process_batch, batch, i) 
+                  for i, batch in enumerate(link_batches)]
+        
+        # Collect results as they complete
+        for i, future in enumerate(futures):
+            try:
+                batch_results = future.result()
+                all_school_data.extend(batch_results)
                 
-            logger.info(f"✅ Data extracted: {school_data['School Name']}")
-            
-        except Exception as e:
-            logger.error(f"❌ Error processing school: {str(e)}")
-            continue
-            
-        # Random pause between schools
-        time.sleep(random.uniform(1, 3))
+                # Save progress after each batch
+                save_progress(all_school_data, f"progress_batch_{i}.csv")
+                logger.info(f"Completed batch {i}/{len(link_batches)}")
+                
+            except Exception as e:
+                logger.error(f"Batch {i} failed: {str(e)}")
     
     return all_school_data
-
-def save_progress(data, filename):
-    """
-    Save partial progress
-    """
-    output_dir = ensure_output_directory("progress")
-    full_path = os.path.join(output_dir, filename)
-    
-    if data:
-        keys = data[0].keys()
-        with open(full_path, mode='w', newline="", encoding="utf-8") as file:
-            writer = csv.DictWriter(file, fieldnames=keys)
-            writer.writeheader()
-            writer.writerows(data)
 
 def scrape_schools():
     logger = setup_logging()
@@ -466,22 +472,29 @@ def scrape_schools():
     try:
         logger.info("🚀 Starting scraping process...")
         driver.get(URL)
-        time.sleep(random.uniform(2, 3))
+        time.sleep(2)
         
-        # Phase 1: Collect all links and get page range
+        # Phase 1: Collect all links
         all_links, first_page, last_page = get_all_school_links_first(driver)
+        driver.quit()
         
         if not all_links:
             logger.error("❌ No links found to process")
             return
             
-        # Phase 2: Process the links
-        logger.info("🔄 Starting link processing...")
-        all_school_data = process_school_links(driver, all_links)
+        # Phase 2: Process links in parallel
+        num_processes = multiprocessing.cpu_count() - 1  # Leave one CPU free
+        logger.info(f"Starting parallel processing with {num_processes} processes")
+        all_school_data = process_school_links_parallel(
+            all_links, 
+            num_processes=num_processes,
+            batch_size=50
+        )
         
-        # Save final results with page range in filename
+        # Save final results
         if all_school_data:
-            csv_filename = f"schools_data_pages_{first_page}_to_{last_page}.csv"
+            output_dir = ensure_output_directory()  # Create output directory if it doesn't exist
+            csv_filename = os.path.join(output_dir, f"schools_data_pages_{first_page}_to_{last_page}.csv")
             save_to_csv(all_school_data, csv_filename)
             logger.info(f"📂 Data saved to {csv_filename}")
             logger.info(f"📊 Total schools processed: {len(all_school_data)}")
@@ -490,9 +503,17 @@ def scrape_schools():
 
     except Exception as e:
         logger.error(f"❌ General error: {str(e)}")
+
+# Function to save progress
+def save_progress(data, filename, directory="progress"):
+    """Save progress to a temporary CSV file"""
+    # Create progress directory if it doesn't exist
+    if not os.path.exists(directory):
+        os.makedirs(directory)
     
-    finally:
-        driver.quit()
+    filepath = os.path.join(directory, filename)
+    save_to_csv(data, filepath)
+    logging.getLogger(__name__).info(f"Progress saved to {filepath}")
 
 # Run the script
 if __name__ == "__main__":
